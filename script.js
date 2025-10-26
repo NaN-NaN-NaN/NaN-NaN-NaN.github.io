@@ -11,8 +11,6 @@
 // • Champion engineering best practices, introducing improvements in CI/CD pipelines, code quality processes, and infrastructure automation to enhance delivery speed and reliability.
 
 // • Mentor and support the growth of engineers, leading onboarding initiatives, developing technical documentation, and fostering a culture of collaboration and continuous learning.
-// • Lead the development and maintenance of the main operational platform, managing a team of 7–8 engineers to ensure smooth operation and continuous improvement. • Proactively resolve critical production issues and implement monitoring solutions, reducing incident volume and improving operational visibility. • Optimize performance across key system components by refactoring legacy code and enhancing database efficiency through targeted SQL tuning. • Leverage AI tools like Copilot to refactor legacy code and enhance test coverage, streamlining the release management process by reducing repetitive tasks and improving overall efficiency. • Deliver impactful product features that increase asset management capacity, automate manual workflows, and improve user conversion through data-driven UX enhancements. • Champion engineering best practices, introducing improvements in CI/CD pipelines, code quality processes, and infrastructure automation to enhance delivery speed and reliability. • Mentor and support the growth of engineers, leading onboarding initiatives, developing technical documentation, and fostering a culture of collaboration and continuous learning.
-// Skills: Emergency management hotfix · Software as a Service (SaaS) · Financial Technology · Credit Risk Management · Leadership · Architecture · Strategy · Software Architectural Design · Coaching · Performance Reviews · Software Asset Management · Amazon EKS · Code Review · Team Leadership · IT Strategy · Optimization · System Monitoring · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Engineering Management · Distributed Systems · Problem Solving · AI for improving Code · People Development
 // Skills: Emergency management hotfix · Software as a Service (SaaS) · Financial Technology · Credit Risk Management · Leadership · Architecture · Strategy · Software Architectural Design · Coaching · Performance Reviews · Software Asset Management · Amazon EKS · Code Review · Team Leadership · IT Strategy · Optimization · System Monitoring · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Engineering Management · Distributed Systems · Problem Solving · AI for improving Code · People Development
 // Full Stack Engineer (Typescript)
 // Full Stack Engineer (Typescript)
@@ -35,7 +33,7 @@
 // PlusDental is a leading German teledentistry company based in Berlin, specializing in the production of clear aligners for patients seeking minor dental adjustments. The service is available across Germany, Austria, the United Kingdom, and several other European countries.
 
 // As a Full Stack Developer at PlusDental, my key responsibilities included:
-
+//
 // • Led the migration from a legacy MERN stack to Next.js, enhancing UI/UX scalability using Redux and styled-components, and revamped mobile apps with React Native to improve user experience and performance.
 
 // • Implemented internationalization (i18n) across multiple countries and languages, while utilizing Google PageSpeed to achieve significant performance enhancements.
