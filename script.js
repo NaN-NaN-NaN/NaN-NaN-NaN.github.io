@@ -1,467 +1,368 @@
-// • Lead the development and maintenance of the main operational platform, managing a team of 7–8 engineers to ensure smooth operation and continuous improvement.
-
-// • Proactively resolve critical production issues and implement monitoring solutions, reducing incident volume and improving operational visibility.
-
-// • Optimize performance across key system components by refactoring legacy code and enhancing database efficiency through targeted SQL tuning.
-
-// • Leverage AI tools like Copilot to refactor legacy code and enhance test coverage, streamlining the release management process by reducing repetitive tasks and improving overall efficiency.
-
-// • Deliver impactful product features that increase asset management capacity, automate manual workflows, and improve user conversion through data-driven UX enhancements.
-
-// • Champion engineering best practices, introducing improvements in CI/CD pipelines, code quality processes, and infrastructure automation to enhance delivery speed and reliability.
-
-// • Mentor and support the growth of engineers, leading onboarding initiatives, developing technical documentation, and fostering a culture of collaboration and continuous learning.
-// Skills: Emergency management hotfix · Software as a Service (SaaS) · Financial Technology · Credit Risk Management · Leadership · Architecture · Strategy · Software Architectural Design · Coaching · Performance Reviews · Software Asset Management · Amazon EKS · Code Review · Team Leadership · IT Strategy · Optimization · System Monitoring · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Engineering Management · Distributed Systems · Problem Solving · AI for improving Code · People Development
-// Full Stack Engineer (Typescript)
-// Full Stack Engineer (Typescript)
-// Feb 2020 - Aug 2021 · 1 yr 7 mosFeb 2020 to Aug 2021 · 1 yr 7 mos
-// Berlin Area, GermanyBerlin Area, Germany
-// • Designed and developed multiple business-critical microservices using NestJS and AWS, supporting key platform features with a focus on scalability, modularity, and performance.
-
-// • Optimized lead conversion, KYC, and investment flows by applying Domain-Driven Design (DDD) and refactoring legacy code, resulting in improved system reliability, maintainability, and long-term scalability.
-
-// Developed end-to-end (E2E) tests using Python and Behave to improve the reliability of the regression test suite, enhancing confidence in releases and ensuring consistent software quality.
-// • Designed and developed multiple business-critical microservices using NestJS and AWS, supporting key platform features with a focus on scalability, modularity, and performance. • Optimized lead conversion, KYC, and investment flows by applying Domain-Driven Design (DDD) and refactoring legacy code, resulting in improved system reliability, maintainability, and long-term scalability. Developed end-to-end (E2E) tests using Python and Behave to improve the reliability of the regression test suite, enhancing confidence in releases and ensuring consistent software quality.
-// Skills: Domain-Driven Design (DDD) · Software as a Service (SaaS) · Financial Technology · Credit Risk Management · Architecture · Python (Programming Language) · Strategy · Microservices · TypeScript · React.js · Software Asset Management · Amazon EKS · Code Review · IT Strategy · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Distributed Systems · NestJS · Problem Solving
-// Skills: Domain-Driven Design (DDD) · Software as a Service (SaaS) · Financial Technology · Credit Risk Management · Architecture · Python (Programming Language) · Strategy · Microservices · TypeScript · React.js · Software Asset Management · Amazon EKS · Code Review · IT Strategy · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Distributed Systems · NestJS · Problem Solving
-// PlusDental logo
-// Software Engineer (JavaScript)
-// Software Engineer (JavaScript)
-// PlusDentalPlusDental
-// Jul 2018 - Jan 2020 · 1 yr 7 mosJul 2018 to Jan 2020 · 1 yr 7 mos
-// Berlin Area, GermanyBerlin Area, Germany
-// PlusDental is a leading German teledentistry company based in Berlin, specializing in the production of clear aligners for patients seeking minor dental adjustments. The service is available across Germany, Austria, the United Kingdom, and several other European countries.
-
-// As a Full Stack Developer at PlusDental, my key responsibilities included:
-//
-// • Led the migration from a legacy MERN stack to Next.js, enhancing UI/UX scalability using Redux and styled-components, and revamped mobile apps with React Native to improve user experience and performance.
-
-// • Implemented internationalization (i18n) across multiple countries and languages, while utilizing Google PageSpeed to achieve significant performance enhancements.
-
-// • Integrated a third-party library to render interactive 3D teeth models and personalized care plans for customers, providing an engaging and informative user experience.
-
-// • Contributed to the design and implementation of GraphQL, optimizing data fetching and improving the overall efficiency of the system.
-// PlusDental is a leading German teledentistry company based in Berlin, specializing in the production of clear aligners for patients seeking minor dental adjustments. The service is available across Germany, Austria, the United Kingdom, and several other European countries. As a Full Stack Developer at PlusDental, my key responsibilities included: • Led the migration from a legacy MERN stack to Next.js, enhancing UI/UX scalability using Redux and styled-components, and revamped mobile apps with React Native to improve user experience and performance. • Implemented internationalization (i18n) across multiple countries and languages, while utilizing Google PageSpeed to achieve significant performance enhancements. • Integrated a third-party library to render interactive 3D teeth models and personalized care plans for customers, providing an engaging and informative user experience. • Contributed to the design and implementation of GraphQL, optimizing data fetching and improving the overall efficiency of the system.
-// Skills: GraphQL · Architecture · React Native · Strategy · TypeScript · I18n · Amazon EKS · Code Review · IT Strategy · MERN Stack · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Problem Solving · Commerce
-// Skills: GraphQL · Architecture · React Native · Strategy · TypeScript · I18n · Amazon EKS · Code Review · IT Strategy · MERN Stack · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Problem Solving · Commerce
-// Full Stack Engineer (NodeJS/MeteorJS/ReactNative)
-// Full Stack Engineer (NodeJS/MeteorJS/ReactNative) 
-// Full Stack Engineer (NodeJS/MeteorJS/ReactNative) 
-// HeroBearHeroBear
-// Apr 2016 - Nov 2017 · 1 yr 8 mosApr 2016 to Nov 2017 · 1 yr 8 mos
-// TaiwanTaiwan
-// HeroBear is a startup company that provides a platform enabling (semi) professional skilled individuals to offer their services to targeted customers.
-
-// As the Lead Full Stack Developer at HeroBear, my key responsibilities included:
-
-// • Collaborated closely with designers to design intuitive and user-friendly UI/UX for the platform.
-
-// • Developed the full stack of the web application using Node.js, Meteor, React, and MongoDB, ensuring a seamless and dynamic user experience.
-
-// • Deployed the web app on AWS, leveraging cloud services for scalability, performance, and security.
-
-// • Managed a team of contract designers and developers, overseeing their work to ensure high-quality deliverables and timely project completion.
-
-// • Designed and implemented mobile applications for both Android and iOS using the React Native framework, providing a cross-platform solution for users.
-// HeroBear is a startup company that provides a platform enabling (semi) professional skilled individuals to offer their services to targeted customers. As the Lead Full Stack Developer at HeroBear, my key responsibilities included: • Collaborated closely with designers to design intuitive and user-friendly UI/UX for the platform. • Developed the full stack of the web application using Node.js, Meteor, React, and MongoDB, ensuring a seamless and dynamic user experience. • Deployed the web app on AWS, leveraging cloud services for scalability, performance, and security. • Managed a team of contract designers and developers, overseeing their work to ensure high-quality deliverables and timely project completion. • Designed and implemented mobile applications for both Android and iOS using the React Native framework, providing a cross-platform solution for users.
-// Skills: JavaScript · UI UX · Low Level Programming · Architecture · React Native · Strategy · NoSQL · Code Review · Cross-platform Development · IT Strategy · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Problem Solving · Commerce · People Development
-// Skills: JavaScript · UI UX · Low Level Programming · Architecture · React Native · Strategy · NoSQL · Code Review · Cross-platform Development · IT Strategy · Emerging Technologies · Pricing Strategy · Trade Finance · Amazon Dynamodb · Computer Science · Problem Solving · Commerce · People Development
-// HERE Technologies logo
-// QA/Release Engineer (Student/Intern)
-// QA/Release Engineer (Student/Intern)
-// HERE, a Nokia companyHERE, a Nokia company
-// May 2015 - Mar 2017 · 1 yr 11 mosMay 2015 to Mar 2017 · 1 yr 11 mos
-// Berlin Area, GermanyBerlin Area, Germany
-// During my time at Nokia HERE, I was primarily responsible for a project in collaboration with Samsung to develop the Native HERE Maps and Navigator applications for Samsung’s native operating system on their devices. My role encompassed a variety of key tasks, as outlined below:
-
-// • Maintained and enhanced Ruby, Python, and Bash scripts for automating tests in the Jenkins CI/CD pipeline, while also setting up nightly end-to-end regression testing on Samsung portable devices. This ensured consistent and reliable testing, helping to catch issues early and ensuring that the mobile app functioned seamlessly across various devices.
-
-// • Supporting software development and debug with C++ on Samsung's native OS system Tizen
-
-// • Tracked and reported application issues while acting as the communication bridge between the HERE project manager, developers, and Samsung's engineering team. This helped resolve critical bugs quickly and ensured smooth collaboration across all parties.
-
-// • Managed software releases, preparing detailed release reports for Samsung that included test results, release notes, and a list of known issues. This ensured everyone involved had the necessary information for a smooth deployment.
-// During my time at Nokia HERE, I was primarily responsible for a project in collaboration with Samsung to develop the Native HERE Maps and Navigator applications for Samsung’s native operating system on their devices. My role encompassed a variety of key tasks, as outlined below: • Maintained and enhanced Ruby, Python, and Bash scripts for automating tests in the Jenkins CI/CD pipeline, while also setting up nightly end-to-end regression testing on Samsung portable devices. This ensured consistent and reliable testing, helping to catch issues early and ensuring that the mobile app functioned seamlessly across various devices. • Supporting software development and debug with C++ on Samsung's native OS system Tizen • Tracked and reported application issues while acting as the communication bridge between the HERE project manager, developers, and Samsung's engineering team. This helped resolve critical bugs quickly and ensured smooth collaboration across all parties. • Managed software releases, preparing detailed release reports for Samsung that included test results, release notes, and a list of known issues. This ensured everyone involved had the necessary information for a smooth deployment.
-// Skills: Project Coordination · Low Level Programming · Python (Programming Language) · Test Automation · Code Review · C++ · Emerging Technologies · End-to-end Testing · Ruby · Computer Science · Problem Solving · Release Management
-// Skills: Project Coordination · Low Level Programming · Python (Programming Language) · Test Automation · Code Review · C++ · Emerging Technologies · End-to-end Testing · Ruby · Computer Science · Problem Solving · Release Management
-// Ruby on Rails project Trainee
-// Ruby on Rails project Trainee
-// Ruby on Rails project Trainee
-// Pilot BootcampPilot Bootcamp
-// Feb 2015 - Feb 2015 · 1 moFeb 2015 to Feb 2015 · 1 mo
-// Mitte, Berlin, GermanyMitte, Berlin, Germany
-// Training project with practical Ruby and Ruby on Rails application.
-// Implementing commercial parking space loaning website with Ruby on Rails including integration test and online deployment
-// Training project with practical Ruby and Ruby on Rails application. Implementing commercial parking space loaning website with Ruby on Rails including integration test and online deployment
-// Skills: Low Level Programming · Emerging Technologies · Computer Science · Problem Solving
-// Skills: Low Level Programming · Emerging Technologies · Computer Science · Problem Solving
-// National Taiwan University logo
-// Graduate Research Assistant
-// Graduate Research Assistant
-// National Taiwan UniversityNational Taiwan University
-// Feb 2013 - Jul 2013 · 6 mosFeb 2013 to Jul 2013 · 6 mos
-// Taipei City, TaiwanTaipei City, Taiwan
-// • Processed and visualized experimental aerosol data using C++ and MATLAB, helping to derive valuable insights and inform future experiments.
-
-// • Streamlined the experimental process to make it more efficient, ensuring we could get more accurate results in less time.
-
-// • Worked with manufacturers to ensure proper calibration control, making sure all equipment was set up correctly for reliable experiment results.
-
-// • Developed a tool in C# to assist with the experiments, improving the overall workflow and making things run smoother.
-
-// • Handled the purchasing and upkeep of experimental materials and equipment, ensuring everything was ready and in top condition for the experiments.
-// • Processed and visualized experimental aerosol data using C++ and MATLAB, helping to derive valuable insights and inform future experiments. • Streamlined the experimental process to make it more efficient, ensuring we could get more accurate results in less time. • Worked with manufacturers to ensure proper calibration control, making sure all equipment was set up correctly for reliable experiment results. • Developed a tool in C# to assist with the experiments, improving the overall workflow and making things run smoother. • Handled the purchasing and upkeep of experimental materials and equipment, ensuring everything was ready and in top condition for the experiments.
-// Skills: Low Level Programming · Emerging Technologies · Problem Solving
-// Skills: Low Level Programming · Emerging Technologies · Problem Solving
-// MAA Engineering Consultants (Shanghai) Ltd. logo
-// Student Assistant Programmer
-// Student Assistant Programmer
-// MAA Engineering Consultants Ltd (Taiwan branch).MAA Engineering Consultants Ltd (Taiwan branch).
-// Apr 2011 - Apr 2012 · 1 yr 1 moApr 2011 to Apr 2012 · 1 yr 1 mo
-// New Taipei City, TaiwanNew Taipei City, Taiwan
-// Developing and implementing auto-check algorithm for legal and usability purpose on Taipei city Metro BIM model with C#.
-// Testing and Visualising result with Revit Architecture 
-// Developing and implementing auto-check algorithm for legal and usability purpose on Taipei city Metro BIM model with C#. Testing and Visualising result with Revit Architecture 
-// Skills: Emerging Technologies · Problem Solving
-// Skills: Emerging Technologies · Problem Solving
-// National Taiwan University logo
-// Graduate Teaching Assistant
-// Graduate Teaching Assistant
-// National Taiwan UniversityNational Taiwan University
-// Jan 2011 - Aug 2011 · 8 mosJan 2011 to Aug 2011 · 8 mos
-// Taipei City, TaiwanTaipei City, Taiwan
-// Course website:https://sites.google.com/a/caece.net/keystone-project-b-jet-cut/
-
-// Inspiring freshman student with creative thinking for the structure design.
-// Guiding students to use engineering graphic software SketchUp to model their design.
-// Assisting with the water jet machine for building the real model. 
-// Assisting to prepare lecture materials.
-// Office hour consulting
-// Course website:https://sites.google.com/a/caece.net/keystone-project-b-jet-cut/ Inspiring freshman student with creative thinking for the structure design. Guiding students to use engineering graphic software SketchUp to model their design. Assisting with the water jet machine for building the real model. Assisting to prepare lecture materials. Office hour consulting
-// Skills: Emerging Technologies · Problem Solving
-// Skills: Emerging Technologies · Problem Solving
-// Intern Assistant Engineer
-// Intern Assistant Engineer
-// Intern Assistant Engineer
-// PanUnitedPanUnited
-// Jun 2007 - Sep 2007 · 4 mosJun 2007 to Sep 2007 · 4 mos
-// SingaporeSingapore
-// Participating the concrete and asphalt lab procedure
-// Construction fields monitoring
-// Drawing road map for construction
-// Office paper work 
-
-
-// Project data
-const projectData = {
-    'agentic-ai': {
-        title: '🤖 Agentic AI',
-        description: 'Exercise based on DeepLearning.AI Agentic AI course, build agentic design patterns: reflection, tool use, planning, and multi-agent workflows Integrate AI with external tools: databases, APIs, web search, and code execution Evaluate and optimize AI systems: performance metrics, error analysis, and production deployment',
-        tech: ['python'],
-        image:"https://storage.googleapis.com/not-a-number-site/547995467_122131309712900028_7649130560212152918_n.jpg",
-        liveLink: '#',
-        githubLink: '#'
+// Experience Data
+  const experiences = [
+    {
+      title: "SDE Team Lead",
+      company: "Moonfare",
+      period: "Aug 2021 - Present",
+      location: "Berlin, Germany",
+      achievements: [
+        "Lead the development and maintenance of the main operational platform, managing a team of 7–8 engineers to ensure smooth operation and continuous improvement",
+        "Proactively resolved critical production issues and implemented monitoring solutions, reducing incident volume and improving operational visibility",
+        "Optimized performance across key system components by refactoring legacy code and enhancing database efficiency through targeted SQL tuning",
+        "Leveraged AI tools like Copilot to refactor legacy code and enhance test coverage, streamlining release management processes",
+        "Delivered impactful product features that increase asset management capacity, automate manual workflows, and improve user conversion through data-driven UX enhancements",
+        "Championed engineering best practices by introducing improvements in CI/CD pipelines, code quality processes, and infrastructure automation",
+        "Mentored and supported the growth of engineers, leading onboarding initiatives, developing technical documentation, and fostering a culture of collaboration and continuous learning"
+      ],
     },
-    'floppy-bird-ml': {
-        title: '🐦 FloppyBird Machine Learning',
-        description: 'HTML5 project that implements a machine learning algorithm in the Flappy Bird video game using neural networks and a genetic algorithm. The program teaches a little bird how to flap optimally in order to fly safely through barriers as long as possible.',
-        tech: ['HTML5', 'OpenWeather API', 'CSS3', 'Geolocation'],
-        liveLink: '#',
-        githubLink: '#'
+    {
+      title: "Full Stack Engineer (Typescript)",
+      company: "Moonfare",
+      period: "Feb 2020 - Aug 2021",
+      location: "Berlin Area, Germany",
+      achievements: [
+        "Designed and developed multiple business-critical microservices using NestJS and AWS, supporting key platform features with a focus on scalability, modularity, and performance",
+        "Optimized lead conversion, KYC, and investment flows using Domain-Driven Design (DDD) and refactoring legacy code, improving system reliability and maintainability",
+        "Developed end-to-end tests using Python and Behave to enhance regression suite reliability and ensure consistent software quality"
+      ],
     },
-    'todo-app': {
-        title: '✅ Todo App',
-        description: 'A modern todo application with drag-and-drop functionality, categories, priority levels, and local storage for persistence. Fully responsive design.',
-        tech: ['React', 'Redux', 'LocalStorage', 'Drag & Drop'],
-        liveLink: '#',
-        githubLink: '#'
+    {
+      title: "Software Engineer (JavaScript)",
+      company: "PlusDental",
+      period: "Jul 2018 - Jan 2020",
+      location: "Berlin Area, Germany",
+      achievements: [
+        "Led migration from legacy MERN stack to Next.js, enhancing UI/UX scalability with Redux and styled-components",
+        "Revamped mobile apps using React Native to improve performance and user experience",
+        "Implemented internationalization (i18n) across multiple countries and languages, leveraging Google PageSpeed for performance improvements",
+        "Integrated a third-party library to render interactive 3D teeth models and personalized care plans for customers",
+        "Contributed to GraphQL design and implementation, optimizing data fetching and system efficiency"
+      ],
     },
-    'portfolio': {
-        title: '💼 Portfolio Site',
-        description: 'My personal portfolio showcasing projects and skills. Built with Gatsby for blazing fast performance, optimized for SEO and accessibility.',
-        tech: ['Gatsby', 'React', 'GraphQL', 'Netlify'],
-        liveLink: 'https://pantak.net',
-        githubLink: 'https://github.com/Kielx/terminal-portfolio'
+    {
+      title: "Full Stack Engineer (NodeJS/MeteorJS/ReactNative)",
+      company: "HeroBear",
+      period: "Apr 2016 - Nov 2017",
+      location: "Taiwan",
+      achievements: [
+        "Collaborated with designers to create intuitive and user-friendly UI/UX",
+        "Developed full stack web applications using Node.js, Meteor, React, and MongoDB, deployed on AWS for scalability and performance",
+        "Managed a team of contract designers and developers, ensuring high-quality deliverables and timely project completion",
+        "Designed and implemented cross-platform mobile applications using React Native for Android and iOS"
+      ],
     },
-    'blog': {
-        title: '📝 Tech Blog',
-        description: 'A blog where I share my thoughts on web development, tutorials, code snippets and tech insights. Updated regularly with new content.',
-        tech: ['Gatsby', 'MDX', 'GraphQL', 'SEO'],
-        liveLink: '#',
-        githubLink: '#'
+    {
+      title: "QA/Release Engineer (Student/Intern)",
+      company: "HERE, a Nokia company",
+      period: "May 2015 - Mar 2017",
+      location: "Berlin Area, Germany",
+      achievements: [
+        "Maintained and enhanced Ruby, Python, and Bash scripts for CI/CD automation in Jenkins, including nightly regression testing",
+        "Supported software development and debugging in C++ on Samsung's Tizen OS",
+        "Tracked and reported application issues, acting as liaison between project manager, developers, and Samsung engineering",
+        "Managed software releases with detailed release reports including test results, release notes, and known issues"
+      ],
     },
-    'moonfare-sde': {
-        title: '🔢 Calculator',
-        description: 'A simple yet elegant calculator with basic arithmetic operations, decimal support, and keyboard shortcuts for power users.',
-        tech: ['JavaScript', 'CSS3', 'HTML5'],
-        liveLink: '#',
-        githubLink: '#'
+    {
+      title: "Ruby on Rails Project Trainee",
+      company: "Pilot Bootcamp",
+      period: "Feb 2015",
+      location: "Mitte, Berlin, Germany",
+      achievements: [
+        "Implemented commercial parking space loaning website with Ruby on Rails",
+        "Integrated tests and deployed the application online"
+      ],
     },
-    'moonfare-em': {
-        title: '⏰ Digital Clock',
-        description: 'An animated digital clock with multiple timezone support, 12/24 hour format toggle, and custom styling options.',
-        tech: ['JavaScript', 'CSS Animations', 'HTML5'],
-        liveLink: '#',
-        githubLink: '#'
+    {
+      title: "Graduate Research Assistant",
+      company: "National Taiwan University",
+      period: "Feb 2013 - Jul 2013",
+      location: "Taipei City, Taiwan",
+      achievements: [
+        "Processed and visualized experimental aerosol data using C++ and MATLAB",
+        "Streamlined experimental processes to improve accuracy and efficiency",
+        "Developed a C# tool to assist experiments and managed experimental materials and equipment"
+      ],
     },
-    'plus-dental': {
-        title: '❓ Quiz App',
-        description: 'Create and take quizzes on various topics. Features include timer, score tracking, leaderboards and detailed analytics.',
-        tech: ['JavaScript', 'LocalStorage', 'CSS3'],
-        liveLink: '#',
-        githubLink: '#'
-    }
-};
+    {
+      title: "Student Assistant Programmer",
+      company: "MAA Engineering Consultants (Shanghai) Ltd.",
+      period: "Apr 2011 - Apr 2012",
+      location: "New Taipei City, Taiwan",
+      achievements: [
+        "Developed and implemented auto-check algorithm for Taipei Metro BIM model using C#",
+        "Tested and visualized results with Revit Architecture"
+      ],
+    },
+    {
+      title: "Graduate Teaching Assistant",
+      company: "National Taiwan University",
+      period: "Jan 2011 - Aug 2011",
+      location: "Taipei City, Taiwan",
+      achievements: [
+        "Instructed freshmen on structure design using SketchUp",
+        "Assisted in preparing lectures, office hour consulting, and hands-on support with water jet machine model building"
+      ],
+    },
+    {
+      title: "Intern Assistant Engineer",
+      company: "PanUnited",
+      period: "Jun 2007 - Sep 2007",
+      location: "Singapore",
+      achievements: [
+        "Participated in concrete and asphalt lab procedures",
+        "Monitored construction sites and drew road maps for construction projects",
+        "Handled office paperwork and assisted in field operations"
+      ],
+    },
+  ];
+  
 
-// Draggable Window Manager
-class DraggableWindow {
-    constructor(projectKey) {
-        this.projectKey = projectKey;
-        this.project = projectData[projectKey];
-        this.isMaximized = false;
-        this.originalPos = { x: 0, y: 0, width: 0, height: 0 };
-        this.create();
-    }
+// Skills Data
+const skills = [
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Node.js",
+  "Laravel",
+  "PHP",
+  "AWS",
+  "SQS",
+  "Lambda",
+  "Step Functions",
+  "EventBridge",
+  "Docker",
+  "Git",
+  "REST APIs",
+  "GraphQL",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "HTML5",
+  "CSS3",
+  "Tailwind CSS",
+  "Jest",
+  "CI/CD",
+  "Agile",
+]
 
-    create() {
-        const windowEl = document.createElement('div');
-        windowEl.className = 'draggable-window';
-        windowEl.setAttribute('data-project-key', this.projectKey);
-        windowEl.innerHTML = `
-            <div class="window-header">
-                <div class="window-buttons">
-                    <div class="window-btn btn-close-win"></div>
-                    <div class="window-btn btn-minimize-win"></div>
-                    <div class="window-btn btn-maximize-win"></div>
+// Projects Data
+const projects = [
+  {
+    title: "Pacman",
+    description:
+      "A recreation of the classic Pacman game with vanilla JavaScript, implementing various path-finding algorithms for ghost movement.",
+    tags: ["JavaScript", "Canvas API", "Path-finding Algorithms"],
+    codeLink: "https://github.com/maskeynihal/pacman",
+    liveLink: "https://maskeynihal.github.io/pacman/",
+  },
+  {
+    title: "Flappy Bird",
+    description: "A clone of the popular Flappy Bird game built with vanilla JavaScript and HTML5 Canvas.",
+    tags: ["JavaScript", "Canvas API", "Game Development"],
+    codeLink: "https://github.com/maskeynihal/flappy-bird",
+    liveLink: "https://maskeynihal.github.io/flappy-bird/",
+  },
+  {
+    title: "Pursue - Job Handling with AWS",
+    description:
+      "A JavaScript package for handling job processing using AWS services like SQS, Lambda, and Step Functions.",
+    tags: ["Node.js", "AWS", "SQS", "Lambda", "npm package"],
+    codeLink: "https://github.com/maskeynihal/pursue",
+    liveLink: null,
+  },
+  {
+    title: "Mailer",
+    description: "A JavaScript package to prepare and send emails using AWS SES, with templating support.",
+    tags: ["Node.js", "AWS", "SES", "Email Templates", "npm package"],
+    codeLink: "https://github.com/maskeynihal/mailer",
+    liveLink: null,
+  },
+]
+
+// Render Experience Timeline
+function renderExperience() {
+  const timeline = document.querySelector(".timeline")
+
+  experiences.forEach((exp) => {
+    const item = document.createElement("div")
+    item.className = "timeline-item"
+
+    const achievementsList = exp.achievements.map((achievement) => `<li>${achievement}</li>`).join("")
+
+    item.innerHTML = `
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">${exp.title}</h3>
+                        <p class="experience-company">${exp.company}</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="experience-badge">${exp.period}</span>
+                        <span class="experience-location">${exp.location}</span>
+                    </div>
                 </div>
-                <div class="window-title">${this.project.title}</div>
+                <ul class="experience-achievements">
+                    ${achievementsList}
+                </ul>
             </div>
-            <div class="window-content">
-                <h2>${this.project.title}</h2>
-                ${this.project.image ? `<img src="${this.project.image}" alt="${this.project.title}" style="max-width: 100%; height: auto; margin-bottom: 15px;">` : ''}
-                <p>${this.project.description}</p>
-                
-                <div class="section-title" style="color: var(--primaryText); font-size: 14px; margin-top: 20px;">Technologies Used:</div>
-                <div class="tech-stack">
-                    ${this.project.tech.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
-                </div>
-                
-                <div class="project-links">
-                    <a href="${this.project.liveLink}" target="_blank" class="btn">🚀 Live Demo</a>
-                    <a href="${this.project.githubLink}" target="_blank" class="btn">💻 View Code</a>
-                </div>
-            </div>
-        `;
+        `
 
-        document.body.appendChild(windowEl);
-        this.element = windowEl;
-        this.header = windowEl.querySelector('.window-header');
-        
-        // 設置位置和大小
-        this.setPosition();
-        this.attachEvents();
-    }
-
-    setPosition() {
-        // 置中窗口
-        this.element.style.left = '50%';
-        this.element.style.top = '50%';
-        this.element.style.transform = 'translate(-50%, -50%)';
-        this.element.style.width = '600px';
-        this.element.style.height = 'auto';
-    }
-
-    attachEvents() {
-        const closeBtn = this.element.querySelector('.btn-close-win');
-        const minimizeBtn = this.element.querySelector('.btn-minimize-win');
-        const maximizeBtn = this.element.querySelector('.btn-maximize-win');
-
-        closeBtn.addEventListener('click', () => {
-            this.close()
-            window.location.hash='';
-        });
-        
-        minimizeBtn.addEventListener('click', () => {
-            this.close()
-            window.location.hash='';
-        });
-        maximizeBtn.addEventListener('click', () => {
-            this.close()
-            window.location.hash='';
-        });
-
-        // 拖曳功能已移除 - 窗口鎖定在中心
-    }
-
-    startDrag(e) {
-        // 拖曳功能已禁用
-    }
-
-    close() {
-        this.element.style.animation = 'slideIn 0.3s ease-out reverse';
-        setTimeout(() => {
-            this.element.remove();
-            const overlay = document.getElementById('modalOverlay');
-            if (document.querySelectorAll('.draggable-window').length === 0) {
-                overlay.classList.remove('active');
-            }
-        }, 300);
-    }
-
-    minimize() {
-        // 簡單的最小化 - 隱藏內容
-        const content = this.element.querySelector('.window-content');
-        if (content.style.display === 'none') {
-            content.style.display = 'block';
-            this.element.style.height = 'auto';
-        } else {
-            content.style.display = 'none';
-            this.element.style.height = '50px';
-        }
-    }
-
-    maximize() {
-        if (!this.isMaximized) {
-            this.element.style.left = '0';
-            this.element.style.top = '0';
-            this.element.style.transform = 'none';
-            this.element.style.width = '100%';
-            this.element.style.height = '100vh';
-            this.isMaximized = true;
-        } else {
-            this.element.style.left = '50%';
-            this.element.style.top = '50%';
-            this.element.style.transform = 'translate(-50%, -50%)';
-            this.element.style.width = '600px';
-            this.element.style.height = 'auto';
-            this.isMaximized = false;
-        }
-    }
+    timeline.appendChild(item)
+  })
 }
 
-// Typewriter effect
-const phrases = [
-    "Software Engineer / Engineering Manager",
-    "Problem Solver",
-    "Creative Thinker",
-    "NaN Fang-Ying",
-];
+// Render Skills
+function renderSkills() {
+  const skillsGrid = document.querySelector(".skills-grid")
 
-let phraseIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-const typewriterElement = document.getElementById('typewriter');
+  skills.forEach((skill) => {
+    const card = document.createElement("div")
+    card.className = "skill-card"
+    card.innerHTML = `<div class="skill-name">${skill}</div>`
+    skillsGrid.appendChild(card)
+  })
+}
 
-function typeWriter() {
-    const currentPhrase = phrases[phraseIndex];
-    
-    if (isDeleting) {
-        typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
-        charIndex--;
+// Render Projects
+function renderProjects() {
+  const projectsGrid = document.querySelector(".projects-grid")
+
+  projects.forEach((project) => {
+    const card = document.createElement("div")
+    card.className = "project-card"
+
+    const tags = project.tags
+      .slice(0, 3)
+      .map((tag) => `<span class="project-tag">${tag}</span>`)
+      .join("")
+
+    const liveButton = project.liveLink
+      ? `
+            <a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="project-link">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live
+            </a>
+        `
+      : ""
+
+    card.innerHTML = `
+            <h3 class="project-title">${project.title}</h3>
+            <p class="project-description">${project.description}</p>
+            <div class="project-tags">${tags}</div>
+            <div class="project-links">
+                <a href="${project.codeLink}" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Code
+                </a>
+                ${liveButton}
+            </div>
+        `
+
+    projectsGrid.appendChild(card)
+  })
+}
+
+// Header Scroll Effect
+function handleScroll() {
+  const header = document.getElementById("header")
+  if (window.scrollY > 10) {
+    header.classList.add("scrolled")
+  } else {
+    header.classList.remove("scrolled")
+  }
+
+  // Update active navigation
+  updateActiveNav()
+}
+
+// Update Active Navigation
+function updateActiveNav() {
+  const sections = ["home", "about", "experience", "projects", "education", "blog", "contact"]
+  let currentSection = "home"
+
+  sections.forEach((section) => {
+    const element = document.getElementById(section)
+    if (element) {
+      const rect = element.getBoundingClientRect()
+      if (rect.top <= 150 && rect.bottom >= 150) {
+        currentSection = section
+      }
+    }
+  })
+
+  // Update desktop nav
+  document.querySelectorAll(".nav-item").forEach((item) => {
+    const section = item.getAttribute("data-section")
+    if (section === currentSection) {
+      item.classList.add("active")
     } else {
-        typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
-        charIndex++;
+      item.classList.remove("active")
     }
+  })
 
-    typewriterElement.innerHTML += '<span class="typewriter-cursor"></span>';
-
-    let typeSpeed = isDeleting ? 50 : 100;
-
-    if (!isDeleting && charIndex === currentPhrase.length) {
-        typeSpeed = 2000;
-        isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        typeSpeed = 500;
+  // Update mobile nav
+  document.querySelectorAll(".mobile-nav-item").forEach((item) => {
+    const section = item.getAttribute("data-section")
+    if (section === currentSection) {
+      item.classList.add("active")
+    } else {
+      item.classList.remove("active")
     }
-
-    setTimeout(typeWriter, typeSpeed);
+  })
 }
 
-// Start typewriter
-setTimeout(typeWriter, 500);
+// Mobile Menu Toggle
+function setupMobileMenu() {
+  const toggle = document.getElementById("mobileMenuToggle")
+  const mobileNav = document.getElementById("mobileNav")
 
-// Handle opening window from hash
-function openWindowFromHash(projectKey) {
-    // Check if window already exists
-    const existingWindow = document.querySelector(`[data-project-key="${projectKey}"]`);
-    if (existingWindow) {
-        return; // Window already open
-    }
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active")
+    mobileNav.classList.toggle("active")
+  })
 
-    // Show modal overlay
-    const overlay = document.getElementById('modalOverlay');
-    overlay.classList.add('active');
-    
-    // Create and open window
-    new DraggableWindow(projectKey);
+  // Close mobile menu when clicking a link
+  document.querySelectorAll(".mobile-nav-item").forEach((item) => {
+    item.addEventListener("click", () => {
+      toggle.classList.remove("active")
+      mobileNav.classList.remove("active")
+    })
+  })
 }
 
-// Project click handler
-const projectItems = document.querySelectorAll('.project-item');
+// Smooth Scroll
+function setupSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault()
+      const target = document.querySelector(this.getAttribute("href"))
+      if (target) {
+        const offset = 80
+        const targetPosition = target.offsetTop - offset
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        })
+      }
+    })
+  })
+}
 
-projectItems.forEach(item => {
-    item.addEventListener('click', function(e) {
-        e.preventDefault();
-        const projectKey = this.getAttribute('data-project');
-        
-        // Update URL with anchor
-        window.location.hash = projectKey;
-        
-        // Open window
-        openWindowFromHash(projectKey);
-    });
-});
+// Initialize
+document.addEventListener("DOMContentLoaded", () => {
+  renderExperience()
+  renderSkills()
+  renderProjects()
+  setupMobileMenu()
+  setupSmoothScroll()
 
-// Close modal when clicking overlay
-document.getElementById('modalOverlay').addEventListener('click', () => {
-    const windows = document.querySelectorAll('.draggable-window');
-    windows.forEach(win => {
-        const closeBtn = win.querySelector('.btn-close-win');
-        closeBtn.click();
-    });
-});
-
-// Remove loading message after page loads
-window.addEventListener('load', function() {
-    setTimeout(() => {
-        const loadingEl = document.querySelector('.loading');
-        if (loadingEl) {
-            loadingEl.textContent = 'Portfolio ready!';
-            loadingEl.classList.remove('loading');
-        }
-    }, 1000);
-
-    // Check for anchor in URL
-    const hash = window.location.hash.substring(1);
-    if (hash && projectData[hash]) {
-        openWindowFromHash(hash);
-    }
-});
-
-// Listen for hash changes (only from external sources, not from clicks)
-window.addEventListener('hashchange', function() {
-    const hash = window.location.hash.substring(1);
-    if (hash && projectData[hash]) {
-        openWindowFromHash(hash);
-    }
-});
-
-window.help = function() {
-    console.log('%c Available commands:', 'color: #ffc600; font-size: 16px; font-weight: bold;');
-    console.log('%c help() - Show this help', 'color: #ccc;');
-    console.log('%c about() - Learn about me', 'color: #ccc;');
-    console.log('%c contact() - Get contact info', 'color: #ccc;');
-};
-
-window.about = function() {
-    console.log('%c About Krzysztof Pantak', 'color: #ffc600; font-size: 16px; font-weight: bold;');
-    console.log('%c Full-stack developer passionate about creating amazing web experiences.', 'color: #ccc;');
-};
-
-window.contact = function() {
-    console.log('%c Contact Information', 'color: #ffc600; font-size: 16px; font-weight: bold;');
-    console.log('%c Email: contact@pantak.net', 'color: #047be3;');
-    console.log('%c GitHub: github.com/kielx', 'color: #047be3;');
-};
+  window.addEventListener("scroll", handleScroll)
+  handleScroll() // Initial call
+})
