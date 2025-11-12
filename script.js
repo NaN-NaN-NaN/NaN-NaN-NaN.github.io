@@ -16,7 +16,7 @@
       ],
     },
     {
-      title: "Full Stack Engineer (Typescript)",
+      title: "Full Stack Engineer",
       company: "Moonfare",
       period: "Feb 2020 - Aug 2021",
       location: "Berlin Area, Germany",
@@ -27,7 +27,7 @@
       ],
     },
     {
-      title: "Software Engineer (JavaScript)",
+      title: "Software Engineer",
       company: "PlusDental",
       period: "Jul 2018 - Jan 2020",
       location: "Berlin Area, Germany",
@@ -40,7 +40,7 @@
       ],
     },
     {
-      title: "Full Stack Engineer (NodeJS/MeteorJS/ReactNative)",
+      title: "Full Stack Engineer",
       company: "HeroBear",
       period: "Apr 2016 - Nov 2017",
       location: "Taiwan",
@@ -63,16 +63,16 @@
         "Managed software releases with detailed release reports including test results, release notes, and known issues"
       ],
     },
-    {
-      title: "Ruby on Rails Project Trainee",
-      company: "Pilot Bootcamp",
-      period: "Feb 2015",
-      location: "Mitte, Berlin, Germany",
-      achievements: [
-        "Implemented commercial parking space loaning website with Ruby on Rails",
-        "Integrated tests and deployed the application online"
-      ],
-    },
+    // {
+    //   title: "Ruby on Rails Project Trainee",
+    //   company: "Pilot Bootcamp",
+    //   period: "Feb 2015",
+    //   location: "Mitte, Berlin, Germany",
+    //   achievements: [
+    //     "Implemented commercial parking space loaning website with Ruby on Rails",
+    //     "Integrated tests and deployed the application online"
+    //   ],
+    // },
     {
       title: "Graduate Research Assistant",
       company: "National Taiwan University",
@@ -119,63 +119,74 @@
   
 
 // Skills Data
-const skills = [
+const skills =[
   "JavaScript",
   "TypeScript",
-  "React.js",
-  "Node.js",
-  "Laravel",
-  "PHP",
+  "Python",
+  "React",
+  "Nextjs",
+  "ReactNative",
+  "Nodejs",
+  "Nestjs",
+  "SQL",
+  "PostgreSQL",
+  "NoSQL",
+  "MongoDB",
+  "Express",
   "AWS",
-  "SQS",
-  "Lambda",
-  "Step Functions",
-  "EventBridge",
   "Docker",
   "Git",
-  "REST APIs",
-  "GraphQL",
-  "PostgreSQL",
-  "MySQL",
-  "MongoDB",
-  "HTML5",
-  "CSS3",
-  "Tailwind CSS",
-  "Jest",
   "CI/CD",
+  "GraphQL",
+  "REST",
+  "Testing",
+  "Automation",
+  "Refactoring",
+  "Leadership",
+  "Mentorship",
   "Agile",
-]
+];
 
 // Projects Data
 const projects = [
   {
-    title: "Pacman",
+    title: "LetterOn",
     description:
-      "A recreation of the classic Pacman game with vanilla JavaScript, implementing various path-finding algorithms for ghost movement.",
-    tags: ["JavaScript", "Canvas API", "Path-finding Algorithms"],
-    codeLink: "https://github.com/maskeynihal/pacman",
-    liveLink: "https://maskeynihal.github.io/pacman/",
+      "An AI-powered app that digitizes and organizes physical mail in under a minute. It scans letters, extracts key details like sender, due dates, and actions using OCR and NLP, and automatically categorizes them. With filters for Starred, Notes, and Important Dates, LetterOn turns paper clutter into a clear, actionable digital inbox.",
+      tags: [
+        "AI",
+        "OCR",
+        "DocumentProcessing",
+        "ComputerVision",
+        "NLP",
+        "React",
+        "Nodejs",
+        "TypeScript",
+        "Python",
+        "OpenAIAPI",
+        "Multilingual",
+        "Automation",
+        "UXDesign",
+        "Productivity",
+      ],    
+    codeLink: "https://github.com/NaN-NaN-NaN/LetterON-Google-AI-Sutdio",
+    liveLink: "https://letteron-ai-studio-952320811039.us-west1.run.app/",
+    images:["img/LetterOn1.png","img/LetterOn2.png","img/LetterOn3.png"],
   },
   {
-    title: "Flappy Bird",
-    description: "A clone of the popular Flappy Bird game built with vanilla JavaScript and HTML5 Canvas.",
-    tags: ["JavaScript", "Canvas API", "Game Development"],
-    codeLink: "https://github.com/maskeynihal/flappy-bird",
-    liveLink: "https://maskeynihal.github.io/flappy-bird/",
-  },
-  {
-    title: "Pursue - Job Handling with AWS",
-    description:
-      "A JavaScript package for handling job processing using AWS services like SQS, Lambda, and Step Functions.",
-    tags: ["Node.js", "AWS", "SQS", "Lambda", "npm package"],
-    codeLink: "https://github.com/maskeynihal/pursue",
+    title: "easy-rag",
+    description: "A command-line tool for querying PDFs using Retrieval-Augmented Generation. It uses AWS Bedrock for embeddings, Chroma for storage, and Ollama for responses, with LLM-based fuzzy tests to validate answer accuracy and relevance.",
+    tags: ["Python", "LangChain", "ChromaDB", "AI", "RAG"],
+    codeLink: "https://github.com/NaN-NaN-NaN/easy-rag",
+    images:["img/EasyRag1.png","img/EasyRag2.png"],
     liveLink: null,
   },
   {
-    title: "Mailer",
-    description: "A JavaScript package to prepare and send emails using AWS SES, with templating support.",
-    tags: ["Node.js", "AWS", "SES", "Email Templates", "npm package"],
-    codeLink: "https://github.com/maskeynihal/mailer",
+    title: "MyLingo (WIP)",
+    description:
+      "Chrome Extension (Manifest V3) that acts as a client-side AI-powered language tutor, letting users learn languages directly from any webpage. It combines highlight-to-translate, grammar hints, TTS listening, notes saving, and quiz generation — all powered by Chrome’s built-in AI APIs (Prompt API, Summarizer API, Translator API",
+      tags: ["JavaScript", "React", "ChromeExtension", "AI", "PromptAPI", "TranslatorAPI", "SummarizerAPI", "TTS", "WebSpeechAPI"],
+      codeLink: "https://github.com/NaN-NaN-NaN/MyLingo",
     liveLink: null,
   },
 ]
@@ -224,49 +235,126 @@ function renderSkills() {
   })
 }
 
+// // Render Projects
+// function renderProjects() {
+//   const projectsGrid = document.querySelector(".projects-grid")
+
+//   projects.forEach((project) => {
+//     const card = document.createElement("div")
+//     card.className = "project-card"
+
+//     const tags = project.tags
+//       .slice(0, 3)
+//       .map((tag) => `<span class="project-tag">${tag}</span>`)
+//       .join("")
+
+//     const liveButton = project.liveLink
+//       ? `
+//             <a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="project-link">
+//                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+//                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+//                     <polyline points="15 3 21 3 21 9"></polyline>
+//                     <line x1="10" y1="14" x2="21" y2="3"></line>
+//                 </svg>
+//                 Live
+//             </a>
+//         `
+//       : ""
+
+//     card.innerHTML = `
+//             <h3 class="project-title">${project.title}</h3>
+//             <p class="project-description">${project.description}</p>
+            
+//             <div class="project-tags">${tags}</div>
+//             <div class="project-links">
+//                 <a href="${project.codeLink}" target="_blank" rel="noopener noreferrer" class="project-link">
+//                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+//                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+//                     </svg>
+//                     Code
+//                 </a>
+//                 ${liveButton}
+//             </div>
+//         `
+
+//     projectsGrid.appendChild(card)
+//   })
+// }
 // Render Projects
 function renderProjects() {
-  const projectsGrid = document.querySelector(".projects-grid")
+  const projectsGrid = document.querySelector(".projects-grid");
+
+  // Add modal HTML once
+  if (!document.getElementById("imageModal")) {
+    const modalHTML = `
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+    `;
+    document.body.insertAdjacentHTML("beforeend", modalHTML);
+  }
+
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const closeBtn = modal.querySelector(".close");
+
+  closeBtn.onclick = () => { modal.style.display = "none"; };
+  modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
 
   projects.forEach((project) => {
-    const card = document.createElement("div")
-    card.className = "project-card"
+    const card = document.createElement("div");
+    card.className = "project-card";
 
     const tags = project.tags
-      .slice(0, 3)
+      .slice(0, 9)
       .map((tag) => `<span class="project-tag">${tag}</span>`)
-      .join("")
+      .join("");
 
     const liveButton = project.liveLink
       ? `
-            <a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="project-link">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-                Live
-            </a>
-        `
-      : ""
+        <a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="project-link">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          Live
+        </a>
+      `
+      : "";
+
+    // Render thumbnails
+    const thumbnails = project.images?.slice(0, 3).map((img, idx) => `
+      <img src="${img}" alt="Project Image ${idx + 1}" class="project-thumbnail" data-index="${idx}">
+    `).join("") || "";
 
     card.innerHTML = `
-            <h3 class="project-title">${project.title}</h3>
-            <p class="project-description">${project.description}</p>
-            <div class="project-tags">${tags}</div>
-            <div class="project-links">
-                <a href="${project.codeLink}" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    Code
-                </a>
-                ${liveButton}
-            </div>
-        `
+      <h3 class="project-title">${project.title}</h3>
+      <p class="project-description">${project.description}</p>
+      <div class="project-tags">${tags}</div>
+      <div class="project-thumbnails">${thumbnails}</div>
+      <div class="project-links">
+        <a href="${project.codeLink}" target="_blank" rel="noopener noreferrer" class="project-link">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          Code
+        </a>
+        ${liveButton}
+      </div>
+    `;
 
-    projectsGrid.appendChild(card)
-  })
+    // Thumbnail click to open modal
+    card.querySelectorAll(".project-thumbnail").forEach(img => {
+      img.addEventListener("click", (e) => {
+        modal.style.display = "block";
+        modalImg.src = e.target.src;
+      });
+    });
+
+    projectsGrid.appendChild(card);
+  });
 }
 
 // Header Scroll Effect

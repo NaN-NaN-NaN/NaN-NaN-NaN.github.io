@@ -10,11 +10,12 @@
   --bg-primary: #0a0a0a;
   --bg-secondary: #1a1a1a;
   --bg-tertiary: #2a2a2a;
-  --text-primary: #f5f5f5;
+  --text-primary: #00fbff;
   --text-secondary: #a0a0a0;
+  --text-tertiary: #EEE;
   --text-muted: #707070;
-  --accent-primary: #ffffff;
-  --accent-secondary: #00f7ff;
+  --accent-primary: #00fbff;
+  --accent-secondary: #6bff6b;
   --border-color: #333333;
   --card-bg: #1a1a1a;
   --card-hover: #252525;
@@ -268,7 +269,7 @@ header.scrolled {
 section {
   position: relative;
   z-index: 1;
-  padding: var(--spacing-2xl) 0;
+  padding: var(--spacing-xl) 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -537,7 +538,7 @@ section {
 }
 
 .experience-company {
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
   font-size: 1rem;
 }
 
@@ -555,7 +556,7 @@ section {
   border: 1px solid var(--border-color);
   border-radius: 9999px;
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
 }
 
 .experience-location {
@@ -626,7 +627,7 @@ section {
 .skill-name {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--text-tertiary);
 }
 
 /* Projects Section */
@@ -733,10 +734,12 @@ section {
   font-weight: bold;
   margin-bottom: var(--spacing-xs);
   max-width: 80%;
+  color: var(--text-tertiary);
+
 }
 
 .education-school {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 1rem;
 }
 
@@ -762,6 +765,10 @@ section {
   color: var(--text-muted);
 }
 
+.education-activities{
+  color: var(--text-muted);
+
+}
 /* Blog Section */
 .blog-section {
   background-color: var(--bg-secondary);
@@ -891,4 +898,48 @@ section {
 
 .animate-in {
   animation: fadeInUp 0.6s ease-out;
+}
+
+.project-thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.certificate {
+  color: white;
+
 }
