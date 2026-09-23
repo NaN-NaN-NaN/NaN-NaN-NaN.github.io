@@ -1,456 +1,522 @@
-// Experience Data
-  const experiences = [
-    {
-      title: "SDE Team Lead",
-      company: "Moonfare",
-      period: "Aug 2021 - Present",
-      location: "Berlin, Germany",
-      achievements: [
-        "Lead the development and maintenance of the main operational platform, managing a team of 7–8 engineers to ensure smooth operation and continuous improvement",
-        "Proactively resolved critical production issues and implemented monitoring solutions, reducing incident volume and improving operational visibility",
-        "Optimized performance across key system components by refactoring legacy code and enhancing database efficiency through targeted SQL tuning",
-        "Leveraged AI tools like Copilot to refactor legacy code and enhance test coverage, streamlining release management processes",
-        "Delivered impactful product features that increase asset management capacity, automate manual workflows, and improve user conversion through data-driven UX enhancements",
-        "Championed engineering best practices by introducing improvements in CI/CD pipelines, code quality processes, and infrastructure automation",
-        "Mentored and supported the growth of engineers, leading onboarding initiatives, developing technical documentation, and fostering a culture of collaboration and continuous learning"
-      ],
-    },
-    {
-      title: "Full Stack Engineer",
-      company: "Moonfare",
-      period: "Feb 2020 - Aug 2021",
-      location: "Berlin Area, Germany",
-      achievements: [
-        "Designed and developed multiple business-critical microservices using NestJS and AWS, supporting key platform features with a focus on scalability, modularity, and performance",
-        "Optimized lead conversion, KYC, and investment flows using Domain-Driven Design (DDD) and refactoring legacy code, improving system reliability and maintainability",
-        "Developed end-to-end tests using Python and Behave to enhance regression suite reliability and ensure consistent software quality"
-      ],
-    },
-    {
-      title: "Software Engineer",
-      company: "PlusDental",
-      period: "Jul 2018 - Jan 2020",
-      location: "Berlin Area, Germany",
-      achievements: [
-        "Led migration from legacy MERN stack to Next.js, enhancing UI/UX scalability with Redux and styled-components",
-        "Revamped mobile apps using React Native to improve performance and user experience",
-        "Implemented internationalization (i18n) across multiple countries and languages, leveraging Google PageSpeed for performance improvements",
-        "Integrated a third-party library to render interactive 3D teeth models and personalized care plans for customers",
-        "Contributed to GraphQL design and implementation, optimizing data fetching and system efficiency"
-      ],
-    },
-    {
-      title: "Full Stack Engineer",
-      company: "HeroBear",
-      period: "Apr 2016 - Nov 2017",
-      location: "Taiwan",
-      achievements: [
-        "Collaborated with designers to create intuitive and user-friendly UI/UX",
-        "Developed full stack web applications using Node.js, Meteor, React, and MongoDB, deployed on AWS for scalability and performance",
-        "Managed a team of contract designers and developers, ensuring high-quality deliverables and timely project completion",
-        "Designed and implemented cross-platform mobile applications using React Native for Android and iOS"
-      ],
-    },
-    {
-      title: "QA/Release Engineer (Student/Intern)",
-      company: "HERE, a Nokia company",
-      period: "May 2015 - Mar 2017",
-      location: "Berlin Area, Germany",
-      achievements: [
-        "Maintained and enhanced Ruby, Python, and Bash scripts for CI/CD automation in Jenkins, including nightly regression testing",
-        "Supported software development and debugging in C++ on Samsung's Tizen OS",
-        "Tracked and reported application issues, acting as liaison between project manager, developers, and Samsung engineering",
-        "Managed software releases with detailed release reports including test results, release notes, and known issues"
-      ],
-    },
-    // {
-    //   title: "Ruby on Rails Project Trainee",
-    //   company: "Pilot Bootcamp",
-    //   period: "Feb 2015",
-    //   location: "Mitte, Berlin, Germany",
-    //   achievements: [
-    //     "Implemented commercial parking space loaning website with Ruby on Rails",
-    //     "Integrated tests and deployed the application online"
-    //   ],
-    // },
-    {
-      title: "Graduate Research Assistant",
-      company: "National Taiwan University",
-      period: "Feb 2013 - Jul 2013",
-      location: "Taipei City, Taiwan",
-      achievements: [
-        "Processed and visualized experimental aerosol data using C++ and MATLAB",
-        "Streamlined experimental processes to improve accuracy and efficiency",
-        "Developed a C# tool to assist experiments and managed experimental materials and equipment"
-      ],
-    },
-    {
-      title: "Student Assistant Programmer",
-      company: "MAA Engineering Consultants (Shanghai) Ltd.",
-      period: "Apr 2011 - Apr 2012",
-      location: "New Taipei City, Taiwan",
-      achievements: [
-        "Developed and implemented auto-check algorithm for Taipei Metro BIM model using C#",
-        "Tested and visualized results with Revit Architecture"
-      ],
-    },
-    {
-      title: "Graduate Teaching Assistant",
-      company: "National Taiwan University",
-      period: "Jan 2011 - Aug 2011",
-      location: "Taipei City, Taiwan",
-      achievements: [
-        "Instructed freshmen on structure design using SketchUp",
-        "Assisted in preparing lectures, office hour consulting, and hands-on support with water jet machine model building"
-      ],
-    },
-    {
-      title: "Intern Assistant Engineer",
-      company: "PanUnited",
-      period: "Jun 2007 - Sep 2007",
-      location: "Singapore",
-      achievements: [
-        "Participated in concrete and asphalt lab procedures",
-        "Monitored construction sites and drew road maps for construction projects",
-        "Handled office paperwork and assisted in field operations"
-      ],
-    },
-  ];
-  
+const CONFIG = {
+  totalFrames: 10,
+  framePath: (index) => `assets/images/frames/frame_${String(index).padStart(2, "0")}.png`,
+  fallbackImage: "assets/images/fallback.png",
+  videoSrc: "assets/video/scene.mp4?v=18",
+  mediaRatio: 1664 / 928,
+  // The clip's knob turn finishes before the file ends. Map the whole scroll onto that motion.
+  motionEnd: 0.75,
+  scrollPerPage: 70, // Each scene holds for 70vh of native scrolling.
+  minGlassWidth: 120,
+  minGlassHeight: 80,
+  channels: [
+    { id: "about" },
+    { id: "experience" },
+    { id: "projects" },
+    { id: "skills" },
+    { id: "education" },
+    { id: "contact" },
+  ],
+};
 
-// Skills Data
-const skills =[
-  "JavaScript",
-  "TypeScript",
-  "Python",
-  "React",
-  "Nextjs",
-  "ReactNative",
-  "Nodejs",
-  "Nestjs",
-  "SQL",
-  "PostgreSQL",
-  "NoSQL",
-  "MongoDB",
-  "Express",
-  "AWS",
-  "Docker",
-  "Git",
-  "CI/CD",
-  "GraphQL",
-  "REST",
-  "Testing",
-  "Automation",
-  "Refactoring",
-  "Leadership",
-  "Mentorship",
-  "Agile",
-];
+document.getElementById("print-cv")?.addEventListener("click", () => window.print());
+if (document.getElementById("stage")) initPortfolio();
 
-// Projects Data
-const projects = [
-  {
-    title: "LetterOn",
-    description:
-      "An AI-powered app that digitizes and organizes physical mail in under a minute. It scans letters, extracts key details like sender, due dates, and actions using OCR and NLP, and automatically categorizes them. With filters for Starred, Notes, and Important Dates, LetterOn turns paper clutter into a clear, actionable digital inbox.",
-      tags: [
-        "AI",
-        "OCR",
-        "DocumentProcessing",
-        "ComputerVision",
-        "NLP",
-        "React",
-        "Nodejs",
-        "TypeScript",
-        "Python",
-        "OpenAIAPI",
-        "Multilingual",
-        "Automation",
-        "UXDesign",
-        "Productivity",
-      ],    
-    codeLink: "https://github.com/NaN-NaN-NaN/LetterON-Google-AI-Sutdio",
-    liveLink: "https://letteron-ai-studio-952320811039.us-west1.run.app/",
-    images:["img/LetterOn1.png","img/LetterOn2.png","img/LetterOn3.png"],
-  },
-  {
-    title: "easy-rag",
-    description: "A command-line tool for querying PDFs using Retrieval-Augmented Generation. It uses AWS Bedrock for embeddings, Chroma for storage, and Ollama for responses, with LLM-based fuzzy tests to validate answer accuracy and relevance.",
-    tags: ["Python", "LangChain", "ChromaDB", "AI", "RAG"],
-    codeLink: "https://github.com/NaN-NaN-NaN/easy-rag",
-    images:["img/EasyRag1.png","img/EasyRag2.png"],
-    liveLink: null,
-  },
-  {
-    title: "MyLingo (WIP)",
-    description:
-      "Chrome Extension (Manifest V3) that acts as a client-side AI-powered language tutor, letting users learn languages directly from any webpage. It combines highlight-to-translate, grammar hints, TTS listening, notes saving, and quiz generation — all powered by Chrome’s built-in AI APIs (Prompt API, Summarizer API, Translator API",
-      tags: ["JavaScript", "React", "ChromeExtension", "AI", "PromptAPI", "TranslatorAPI", "SummarizerAPI", "TTS", "WebSpeechAPI"],
-      codeLink: "https://github.com/NaN-NaN-NaN/MyLingo",
-    liveLink: null,
-  },
-]
+function initPortfolio() {
+  const root = document.documentElement;
+  const stage = document.getElementById("stage");
+  const glass = document.getElementById("glass");
+  const video = document.getElementById("scene-video");
+  const still = document.getElementById("hero-still");
+  const canvas = document.getElementById("view");
+  const context = canvas.getContext("2d");
+  const bar = document.getElementById("dock-bar");
+  const previous = document.getElementById("page-prev");
+  const next = document.getElementById("page-next");
+  const index = document.getElementById("page-index");
+  const status = document.getElementById("page-status");
+  const controls = document.querySelector(".screen-controls");
+  const pages = [...document.querySelectorAll(".chapter")];
+  const groups = [...document.querySelectorAll(".channel")];
+  const channelPages = new Map(CONFIG.channels.map(({ id }) => [id, pages.filter((page) => page.dataset.channel === id)]));
+  const remembered = new Map(CONFIG.channels.map(({ id }) => [id, 0]));
+  const narrowQuery = matchMedia("(max-width: 800px)");
+  const reducedQuery = matchMedia("(prefers-reduced-motion: reduce)");
+  // Safe isolated review: no original room image, frame, video or audio is requested.
+  const screenPreview = new URLSearchParams(location.search).get("preview") === "screen";
+  root.classList.toggle("screen-preview", screenPreview);
+  root.style.setProperty("--timeline", `${100 + pages.length * CONFIG.scrollPerPage}vh`);
+  let cinematic = false;
+  let activeChannel = "about";
+  let observer;
+  let frameRequest = 0;
+  let resizeRequest = 0;
+  let pulseTimer;
+  let ratio = CONFIG.mediaRatio;
+  let currentProgress = 0;
+  let videoStarted = false;
+  let videoReady = false;
+  let videoFailed = false;
+  let mediaUnavailable = false;
+  let failedFrames = 0;
+  let stillFailed = false;
+  let framesStarted = false;
+  let turnRunning = false;
+  let pendingTurns = 0;
+  let turnFrame = 0;
+  let playbackToken = 0;
+  let lastRenderedPage = null;
+  let turnsRequested = 0;
+  let turnsCompleted = 0;
+  let videoSeeking = false;
+  let lastTurnAt = 0;
+  const turnCooldown = 2600;
+  let watchdog;
 
-// Render Experience Timeline
-function renderExperience() {
-  const timeline = document.querySelector(".timeline")
+  const frames = new Array(CONFIG.totalFrames).fill(null);
+  let targetFrame = 0;
+  let lastFrame = -1;
 
-  experiences.forEach((exp) => {
-    const item = document.createElement("div")
-    item.className = "timeline-item"
-
-    const achievementsList = exp.achievements.map((achievement) => `<li>${achievement}</li>`).join("")
-
-    item.innerHTML = `
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="experience-title">${exp.title}</h3>
-                        <p class="experience-company">${exp.company}</p>
-                    </div>
-                    <div class="experience-meta">
-                        <span class="experience-badge">${exp.period}</span>
-                        <span class="experience-location">${exp.location}</span>
-                    </div>
-                </div>
-                <ul class="experience-achievements">
-                    ${achievementsList}
-                </ul>
-            </div>
-        `
-
-    timeline.appendChild(item)
-  })
-}
-
-// Render Skills
-function renderSkills() {
-  const skillsGrid = document.querySelector(".skills-grid")
-
-  skills.forEach((skill) => {
-    const card = document.createElement("div")
-    card.className = "skill-card"
-    card.innerHTML = `<div class="skill-name">${skill}</div>`
-    skillsGrid.appendChild(card)
-  })
-}
-
-// // Render Projects
-// function renderProjects() {
-//   const projectsGrid = document.querySelector(".projects-grid")
-
-//   projects.forEach((project) => {
-//     const card = document.createElement("div")
-//     card.className = "project-card"
-
-//     const tags = project.tags
-//       .slice(0, 3)
-//       .map((tag) => `<span class="project-tag">${tag}</span>`)
-//       .join("")
-
-//     const liveButton = project.liveLink
-//       ? `
-//             <a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="project-link">
-//                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-//                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-//                     <polyline points="15 3 21 3 21 9"></polyline>
-//                     <line x1="10" y1="14" x2="21" y2="3"></line>
-//                 </svg>
-//                 Live
-//             </a>
-//         `
-//       : ""
-
-//     card.innerHTML = `
-//             <h3 class="project-title">${project.title}</h3>
-//             <p class="project-description">${project.description}</p>
-            
-//             <div class="project-tags">${tags}</div>
-//             <div class="project-links">
-//                 <a href="${project.codeLink}" target="_blank" rel="noopener noreferrer" class="project-link">
-//                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-//                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-//                     </svg>
-//                     Code
-//                 </a>
-//                 ${liveButton}
-//             </div>
-//         `
-
-//     projectsGrid.appendChild(card)
-//   })
-// }
-// Render Projects
-function renderProjects() {
-  const projectsGrid = document.querySelector(".projects-grid");
-
-  // Add modal HTML once
-  if (!document.getElementById("imageModal")) {
-    const modalHTML = `
-      <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-      </div>
-    `;
-    document.body.insertAdjacentHTML("beforeend", modalHTML);
+  function currentPage() { return channelPages.get(activeChannel)[remembered.get(activeChannel)]; }
+  function maxScroll() { return Math.max(1, document.documentElement.scrollHeight - innerHeight); }
+  function progress() { return Math.min(1, Math.max(0, scrollY / maxScroll())); }
+  function pageAt(value) { return pages[Math.min(pages.length - 1, Math.floor(value * pages.length + .0001))]; }
+  function pageProgress(page) { return (pages.indexOf(page) + .015) / pages.length; }
+  function scrollToPage(page) { window.scrollTo({ top: pageProgress(page) * maxScroll(), behavior: "instant" }); }
+  function selectPage(page) {
+    activeChannel = page.dataset.channel;
+    remembered.set(activeChannel, channelPages.get(activeChannel).indexOf(page));
   }
-
-  const modal = document.getElementById("imageModal");
-  const modalImg = document.getElementById("modalImage");
-  const closeBtn = modal.querySelector(".close");
-
-  closeBtn.onclick = () => { modal.style.display = "none"; };
-  modal.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; };
-
-  projects.forEach((project) => {
-    const card = document.createElement("div");
-    card.className = "project-card";
-
-    const tags = project.tags
-      .slice(0, 9)
-      .map((tag) => `<span class="project-tag">${tag}</span>`)
-      .join("");
-
-    const liveButton = project.liveLink
-      ? `
-        <a href="${project.liveLink}" target="_blank" rel="noopener noreferrer" class="project-link">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-          Live
-        </a>
-      `
-      : "";
-
-    // Render thumbnails
-    const thumbnails = project.images?.slice(0, 3).map((img, idx) => `
-      <img src="${img}" alt="Project Image ${idx + 1}" class="project-thumbnail" data-index="${idx}">
-    `).join("") || "";
-
-    card.innerHTML = `
-      <h3 class="project-title">${project.title}</h3>
-      <p class="project-description">${project.description}</p>
-      <div class="project-tags">${tags}</div>
-      <div class="project-thumbnails">${thumbnails}</div>
-      <div class="project-links">
-        <a href="${project.codeLink}" target="_blank" rel="noopener noreferrer" class="project-link">
-          <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-          </svg>
-          Code
-        </a>
-        ${liveButton}
-      </div>
-    `;
-
-    // Thumbnail click to open modal
-    card.querySelectorAll(".project-thumbnail").forEach(img => {
-      img.addEventListener("click", (e) => {
-        modal.style.display = "block";
-        modalImg.src = e.target.src;
-      });
+  function writeHash(id) {
+    if (location.hash !== `#${id}`) history.replaceState(null, "", `#${id}`);
+  }
+  function pulse() {
+    if (!cinematic || reducedQuery.matches) return;
+    glass.classList.remove("is-tuning");
+    void glass.offsetWidth;
+    glass.classList.add("is-tuning");
+    clearTimeout(pulseTimer);
+    pulseTimer = setTimeout(() => glass.classList.remove("is-tuning"), 210);
+  }
+  function render(animate = false, updateHash = true) {
+    const selected = currentPage();
+    const changed = lastRenderedPage !== null && lastRenderedPage !== selected.id;
+    lastRenderedPage = selected.id;
+    groups.forEach((group) => group.classList.toggle("is-active", group.dataset.channelGroup === activeChannel));
+    pages.forEach((page) => {
+      const active = page === selected;
+      page.classList.toggle("is-active", active);
+      page.inert = cinematic && !active;
+      if (cinematic && !active) page.setAttribute("aria-hidden", "true");
+      else page.removeAttribute("aria-hidden");
     });
-
-    projectsGrid.appendChild(card);
+    document.querySelectorAll("[data-channel-link]").forEach((link) => {
+      if (link.dataset.channelLink === activeChannel) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+    });
+    const list = channelPages.get(activeChannel);
+    const position = remembered.get(activeChannel);
+    previous.disabled = pages.indexOf(selected) === 0;
+    next.disabled = pages.indexOf(selected) === pages.length - 1;
+    const overviewPosition = 0;
+    index.disabled = position === overviewPosition;
+    index.textContent = "↖ Overview";
+    status.textContent = `${activeChannel[0].toUpperCase() + activeChannel.slice(1)} · ${position + 1} / ${list.length}`;
+    previous.setAttribute("aria-label", `Previous ${activeChannel} page`);
+    next.setAttribute("aria-label", `Next ${activeChannel} page`);
+    root.dataset.channel = activeChannel;
+    root.dataset.page = selected.id;
+    if (updateHash) writeHash(selected.id);
+    if (animate && changed) pulse();
+    if (cinematic) requestAnimationFrame(fitSheets);
+  }
+  function commitStagedPage() {
+    const page = stagedPage;
+    stagedPage = null;
+    if (!page || page === currentPage()) return;
+    selectPage(page);
+    render(true);
+  }
+  function stagePageChange(page) {
+    if (!page || (page === currentPage() && !turnRunning)) return;
+    stagedPage = page;
+    if (turnRunning) return;
+    if (performance.now() - lastTurnAt < turnCooldown || (!videoReady && !frames.some(Boolean))) {
+      commitStagedPage();
+      return;
+    }
+    pendingTurns = 1;
+    root.dataset.turnsRequested = String(++turnsRequested);
+    playTurn();
+    if (!turnRunning) commitStagedPage();
+  }
+  function turnPage(position) {
+    const list = channelPages.get(activeChannel);
+    const page = list[Math.min(list.length - 1, Math.max(0, position))];
+    jump(activeChannel, page.id);
+    // If a paging button becomes disabled, place focus on the remaining paging control.
+    if (document.activeElement === next && next.disabled) previous.focus();
+    else if (document.activeElement === previous && previous.disabled) next.focus();
+    else if (document.activeElement === index && index.disabled) next.focus();
+  }
+  function jump(channel, pageId, focus = false, immediate = false) {
+    const list = channelPages.get(channel);
+    if (!list) return;
+    const found = pageId ? list.findIndex((page) => page.id === pageId) : remembered.get(channel) || 0;
+    const page = list[Math.max(0, found)];
+    activeChannel = channel;
+    remembered.set(channel, list.indexOf(page));
+    render(false);
+    if (cinematic) {
+      scrollToPage(currentPage());
+      schedule();
+    } else page.scrollIntoView({ behavior: "instant", block: "start" });
+    if (focus) page.querySelector("h1, h2")?.focus({ preventScroll: true });
+  }
+  function stepPage(direction) {
+    const target = pages[Math.min(pages.length - 1, Math.max(0, pages.indexOf(currentPage()) + direction))];
+    jump(target.dataset.channel, target.id);
+    if (document.activeElement === next && next.disabled) previous.focus();
+    else if (document.activeElement === previous && previous.disabled) next.focus();
+  }
+  previous.addEventListener("click", () => stepPage(-1));
+  next.addEventListener("click", () => stepPage(1));
+  index.addEventListener("click", () => turnPage(0));
+  document.querySelectorAll("[data-channel-link], [data-page]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const pageId = link.dataset.page;
+      const target = pageId ? document.getElementById(pageId) : null;
+      const channel = target?.dataset.channel || link.dataset.channelLink;
+      if (!channelPages.has(channel)) return;
+      event.preventDefault();
+      jump(channel, pageId || channelPages.get(channel)[0].id, Boolean(pageId));
+    });
   });
-}
+  controls.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    stepPage(event.key === "ArrowRight" ? 1 : -1);
+  });
+  function restoreHash() {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return false; }
+    const aliases = { "experience-index": "experience", "work-moonfare-2": "work-moonfare", "work-moonfare-3": "work-moonfare", "work-moonfare-engineer": "work-moonfare", "work-moonfare-engineer-2": "work-moonfare", "work-plusdental-2": "work-plusdental", "work-ntu-teaching": "work-ntu-research", "early-software": "work-herobear", "early-research": "work-ntu-research", "letteron-intelligence": "projects", "letteron-engineering": "projects", "skills-product": "skills", "skills-leadership": "skills", "skills-systems": "skills" };
+    id = aliases[id] || id;
+    const page = pages.find((item) => item.id === id);
+    if (!page) return false;
+    jump(page.dataset.channel, page.id, false, true);
+    return true;
+  }
+  addEventListener("hashchange", restoreHash);
 
-// Header Scroll Effect
-function handleScroll() {
-  const header = document.getElementById("header")
-  if (window.scrollY > 10) {
-    header.classList.add("scrolled")
-  } else {
-    header.classList.remove("scrolled")
+  function stageSize() {
+    const dockEl = document.querySelector(".dock");
+    const reserve = dockEl.getBoundingClientRect().height || 72;
+    const dockHeight = cinematic ? reserve : Math.min(194, Math.max(64, innerHeight * .14));
+    const availH = Math.max(160, innerHeight - dockHeight);
+    const narrow = narrowQuery.matches;
+    let width;
+    let height;
+    let focus = 0.5;
+    if (narrow) {
+      // Enlarge the frame until the television and the hand still fit across the phone.
+      width = innerWidth / 0.86;
+      height = width / ratio;
+      if (height > availH) {
+        height = availH;
+        width = height * ratio;
+      }
+      focus = 0.52;
+    } else {
+      height = Math.min(innerWidth / ratio, availH);
+      width = height * ratio;
+    }
+    return { width, height, focus, narrow };
+  }
+  function placeStage(size) {
+    stage.style.width = `${size.width}px`;
+    stage.style.height = `${size.height}px`;
+    stage.style.left = size.narrow && size.width > innerWidth
+      ? `${innerWidth / 2 - size.width * size.focus}px`
+      : `${(innerWidth - size.width) / 2}px`;
+    stage.style.top = `${Math.max(0, (innerHeight - document.querySelector(".dock").getBoundingClientRect().height - size.height) / 2)}px`;
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    canvas.width = Math.round(size.width * dpr);
+    canvas.height = Math.round(size.height * dpr);
+    lastFrame = -1;
+  }
+  function fitSheets() {
+    document.querySelectorAll(".sheet").forEach((sheet) => {
+      sheet.classList.toggle("can-scroll", sheet.scrollHeight > sheet.clientHeight + 8);
+    });
+  }
+  function observeReading() {
+    observer?.disconnect();
+    if (cinematic || !("IntersectionObserver" in window)) return;
+    // The observer only schedules a measurement. Queued entries from a previous
+    // hash jump must never overwrite the actual page now under the reading line.
+    observer = new IntersectionObserver(schedule, { threshold: [0, .5] });
+    pages.forEach((page) => observer.observe(page));
+  }
+  function readingPage() {
+    if (scrollY >= maxScroll() - 2) return pages[pages.length - 1];
+    const line = innerHeight * .24;
+    return pages.find((page) => {
+      const rect = page.getBoundingClientRect();
+      return rect.top <= line && rect.bottom > line;
+    }) || pages.find((page) => page.getBoundingClientRect().top >= 0) || pages[0];
+  }
+  function syncMode(initial = false) {
+    const oldMode = cinematic;
+    const selected = currentPage();
+    const size = stageSize();
+    cinematic = !mediaUnavailable && !reducedQuery.matches && innerWidth >= 320 && size.width * .448 >= CONFIG.minGlassWidth && size.height * .656 >= CONFIG.minGlassHeight;
+    root.classList.toggle("is-cinematic", cinematic);
+    if (cinematic) {
+      placeStage(stageSize());
+      observer?.disconnect();
+      ensureMedia();
+      requestAnimationFrame(fitSheets);
+    } else {
+      stage.removeAttribute("style");
+      stopTurns();
+      observeReading();
+    }
+    render(false, false);
+    if (!initial) {
+      if (cinematic) {
+        scrollToPage(selected);
+      } else if (oldMode) selected.scrollIntoView({ behavior: "instant", block: "start" });
+    }
+    schedule();
   }
 
-  // Update active navigation
-  updateActiveNav()
-}
-
-// Update Active Navigation
-function updateActiveNav() {
-  const sections = ["home", "about", "experience", "projects", "education", "blog", "contact"]
-  let currentSection = "home"
-
-  sections.forEach((section) => {
-    const element = document.getElementById(section)
-    if (element) {
-      const rect = element.getBoundingClientRect()
-      if (rect.top <= 150 && rect.bottom >= 150) {
-        currentSection = section
+  function ensureMedia() {
+    if (screenPreview || !cinematic) return;
+    if (!still.getAttribute("src")) still.src = still.dataset.src;
+    if (videoFailed) { ensureFrames(); return; }
+    if (videoStarted) return;
+    videoStarted = true;
+    video.muted = true;
+    video.preload = "auto";
+    video.src = CONFIG.videoSrc;
+    video.load();
+    watchdog = setTimeout(failVideo, 10000);
+  }
+  function fallbackToReading() {
+    if (failedFrames === CONFIG.totalFrames && stillFailed) {
+      mediaUnavailable = true;
+      syncMode();
+    }
+  }
+  still.addEventListener("load", () => still.classList.add("is-loaded"));
+  still.addEventListener("error", () => {
+    if (still.dataset.fallback) {
+      stillFailed = true;
+      still.style.visibility = "hidden";
+      fallbackToReading();
+      return;
+    }
+    still.dataset.fallback = "true";
+    still.src = CONFIG.fallbackImage;
+  });
+  video.addEventListener("loadedmetadata", () => {
+    if (videoFailed || !video.videoWidth || !video.videoHeight) return;
+    ratio = video.videoWidth / video.videoHeight;
+    syncMode();
+  });
+  video.addEventListener("loadeddata", () => {
+    if (videoFailed) return;
+    const end = video.seekable.length ? video.seekable.end(video.seekable.length - 1) : 0;
+    if (end < 0.2 && video.dataset.blob !== "1") {
+      video.dataset.blob = "1";
+      fetch(CONFIG.videoSrc).then((response) => {
+        if (!response.ok) throw new Error("video");
+        return response.blob();
+      }).then((blob) => {
+        video.src = URL.createObjectURL(blob);
+        video.load();
+      }).catch(() => failVideo());
+      return;
+    }
+    if (!Number.isFinite(video.duration) || video.duration <= 0) { failVideo(); return; }
+    videoReady = true;
+    clearTimeout(watchdog);
+    root.classList.add("use-video");
+    video.pause();
+    schedule();
+  });
+  video.addEventListener("error", failVideo);
+  video.addEventListener("seeked", () => {
+    videoSeeking = false;
+    if (!videoReady || videoFailed) return;
+    const target = videoTime(currentProgress);
+    if (Math.abs(video.currentTime - target) >= 0.04) scrubVideo();
+  });
+  function requestTurn() {
+    if (!cinematic || reducedQuery.matches || screenPreview || turnRunning) return;
+    const now = performance.now();
+    if (now - lastTurnAt < turnCooldown) return;
+    pendingTurns = 1;
+    root.dataset.turnsRequested = String(++turnsRequested);
+    playTurn();
+  }
+  function stopTurns() {
+    playbackToken++;
+    pendingTurns = 0;
+    turnRunning = false;
+    cancelAnimationFrame(turnFrame);
+    video.pause();
+  }
+  function finishTurn() {
+    if (!turnRunning) return;
+    turnRunning = false;
+    pendingTurns = 0;
+    root.dataset.turnsCompleted = String(++turnsCompleted);
+    commitStagedPage();
+  }
+  function playTurn() {
+    if (turnRunning || !pendingTurns || !cinematic || reducedQuery.matches) return;
+    lastTurnAt = performance.now();
+    if (videoReady && !videoFailed) {
+      turnRunning = true;
+      const token = ++playbackToken;
+      const start = () => {
+        if (token !== playbackToken || !cinematic) return;
+        video.playbackRate = 2;
+        const promise = video.play();
+        promise?.catch(() => {
+          if (token !== playbackToken || !cinematic) return;
+          turnRunning = false;
+          failVideo();
+        });
+      };
+      if (video.currentTime > 0.05) {
+        video.addEventListener("seeked", start, { once: true });
+        video.currentTime = 0;
+      } else start();
+    } else if (frames.some(Boolean)) {
+      turnRunning = true;
+      const started = performance.now();
+      const animate = (now) => {
+        if (!cinematic || !turnRunning) return;
+        const value = Math.min(1, (now - started) / 1250);
+        targetFrame = Math.round(value * (CONFIG.totalFrames - 1));
+        drawFrame();
+        if (value < 1) turnFrame = requestAnimationFrame(animate);
+        else finishTurn();
+      };
+      turnFrame = requestAnimationFrame(animate);
+    }
+  }
+  function failVideo() {
+    if (videoFailed || screenPreview) return;
+    videoFailed = true;
+    videoReady = false;
+    turnRunning = false;
+    clearTimeout(watchdog);
+    commitStagedPage();
+    root.classList.remove("use-video");
+    video.pause();
+    ensureFrames();
+  }
+  function ensureFrames() {
+    if (framesStarted || screenPreview || !cinematic) return;
+    framesStarted = true;
+    for (let number = 1; number <= CONFIG.totalFrames; number++) {
+      const image = new Image();
+      image.decoding = "async";
+      image.onload = () => { frames[number - 1] = image; lastFrame = -1; schedule(); };
+      image.onerror = () => { failedFrames++; fallbackToReading(); };
+      image.src = CONFIG.framePath(number);
+    }
+  }
+  function drawFrame() {
+    if (!context || !cinematic) return;
+    let nearest = -1;
+    frames.forEach((frame, i) => {
+      if (frame && (nearest < 0 || Math.abs(i - targetFrame) < Math.abs(nearest - targetFrame))) nearest = i;
+    });
+    if (nearest < 0 || nearest === lastFrame) return;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.drawImage(frames[nearest], 0, 0, canvas.width, canvas.height);
+    root.classList.add("frames-ready");
+    lastFrame = nearest;
+  }
+  function tick() {
+    frameRequest = 0;
+    if (!cinematic) {
+      const target = readingPage();
+      if (target !== currentPage()) { selectPage(target); render(false, false); }
+      return;
+    }
+    currentProgress = progress();
+    const targetPage = pageAt(currentProgress);
+    if (targetPage !== currentPage()) {
+      selectPage(targetPage);
+      render(true);
+    }
+    bar.style.transform = `scaleX(${currentProgress})`;
+    if (videoReady && !videoFailed) scrubVideo();
+    else {
+      targetFrame = Math.round(currentProgress * (CONFIG.totalFrames - 1));
+      drawFrame();
+    }
+  }
+  function videoTime(progress) {
+    const duration = video.duration;
+    if (!Number.isFinite(duration) || duration <= 0) return null;
+    const span = Math.min(1, Math.max(0.05, CONFIG.motionEnd || 1));
+    return progress * Math.max(0, duration * span - 1 / 24);
+  }
+  function scrubVideo() {
+    if (!videoReady || videoFailed || videoSeeking) return;
+    const target = videoTime(currentProgress);
+    if (target == null) return;
+    if (Math.abs(video.currentTime - target) < 0.03) return;
+    const pinned = window.scrollY;
+    videoSeeking = true;
+    video.pause();
+    video.currentTime = target;
+    if (window.scrollY !== pinned) window.scrollTo(0, pinned);
+  }
+  function schedule() { if (!frameRequest) frameRequest = requestAnimationFrame(tick); }
+  addEventListener("scroll", schedule, { passive: true });
+  addEventListener("resize", () => {
+    cancelAnimationFrame(resizeRequest);
+    resizeRequest = requestAnimationFrame(() => syncMode());
+  }, { passive: true });
+  narrowQuery.addEventListener("change", () => syncMode());
+  reducedQuery.addEventListener("change", () => syncMode());
+  addEventListener("pageshow", (event) => { if (event.persisted) { syncMode(); restoreHash(); } });
+  const artCanvases = new Map();
+  document.querySelectorAll(".chapter[data-art]").forEach((article) => {
+    const name = article.dataset.art;
+    const layer = article.querySelector(".scene-art");
+    const raster = document.createElement("canvas");
+    raster.width = 192; raster.height = 144;
+    raster.setAttribute("aria-hidden", "true");
+    layer.append(raster);
+    if (!artCanvases.has(name)) artCanvases.set(name, []);
+    artCanvases.get(name).push(raster);
+  });
+  artCanvases.forEach((canvases, name) => {
+    const source = new Image();
+    source.onload = () => canvases.forEach((raster) => {
+      const ctx = raster.getContext("2d");
+      if (!ctx) return;
+      ctx.filter = "saturate(.24) contrast(.8) brightness(1.15) blur(.45px)";
+      ctx.drawImage(source, 0, 0, 192, 144);
+      const pixels = ctx.getImageData(0, 0, 192, 144);
+      for (let i = 0; i < pixels.data.length; i += 4) {
+        for (let c = 0; c < 3; c++) pixels.data[i + c] = Math.round(pixels.data[i + c] / 12) * 12;
       }
-    }
-  })
-
-  // Update desktop nav
-  document.querySelectorAll(".nav-item").forEach((item) => {
-    const section = item.getAttribute("data-section")
-    if (section === currentSection) {
-      item.classList.add("active")
-    } else {
-      item.classList.remove("active")
-    }
-  })
-
-  // Update mobile nav
-  document.querySelectorAll(".mobile-nav-item").forEach((item) => {
-    const section = item.getAttribute("data-section")
-    if (section === currentSection) {
-      item.classList.add("active")
-    } else {
-      item.classList.remove("active")
-    }
-  })
+      ctx.putImageData(pixels, 0, 0);
+      raster.classList.add("is-ready");
+    });
+    source.src = `assets/art-v2/${name}.webp`;
+  });
+  syncMode(true);
+  if (!restoreHash()) render(false, false);
 }
-
-// Mobile Menu Toggle
-function setupMobileMenu() {
-  const toggle = document.getElementById("mobileMenuToggle")
-  const mobileNav = document.getElementById("mobileNav")
-
-  toggle.addEventListener("click", () => {
-    toggle.classList.toggle("active")
-    mobileNav.classList.toggle("active")
-  })
-
-  // Close mobile menu when clicking a link
-  document.querySelectorAll(".mobile-nav-item").forEach((item) => {
-    item.addEventListener("click", () => {
-      toggle.classList.remove("active")
-      mobileNav.classList.remove("active")
-    })
-  })
-}
-
-// Smooth Scroll
-function setupSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault()
-      const target = document.querySelector(this.getAttribute("href"))
-      if (target) {
-        const offset = 80
-        const targetPosition = target.offsetTop - offset
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        })
-      }
-    })
-  })
-}
-
-// Initialize
-document.addEventListener("DOMContentLoaded", () => {
-  renderExperience()
-  renderSkills()
-  renderProjects()
-  setupMobileMenu()
-  setupSmoothScroll()
-
-  window.addEventListener("scroll", handleScroll)
-  handleScroll() // Initial call
-})

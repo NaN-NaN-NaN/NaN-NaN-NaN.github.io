@@ -76,10 +76,11 @@ button:disabled { opacity: .3; cursor: default; }
 .capabilities { margin: 0; display: grid; gap: 14px; }
 .capabilities dt { font: 13px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin-bottom: 4px; }
 .capabilities dd { margin: 0; }
-.contact-list { padding: 0; margin: 0 0 18px; list-style: none; }
-.contact-list li { margin: 0 0 14px; }
-.contact-list li:first-child a { overflow-wrap: anywhere; }
-.contact-list li:nth-child(2) { display: flex; gap: 28px; }
+.contact-list { display: grid; gap: 11px; padding: 0; margin: 0 0 16px; list-style: none; }
+.contact-list li { margin: 0; }
+.contact-list a { overflow-wrap: anywhere; }
+.with-icon { display: inline-flex; align-items: center; gap: .42em; text-decoration: none; }
+.ico { width: 1.05em; height: 1.05em; flex: none; display: block; }
 .screen-controls, .glass-fx { display: none; }
 .dock { position: sticky; bottom: 0; z-index: 6; padding: 10px 20px 12px; background: #080a0bf5; border-top: 1px solid #b9b0a733; }
 .dock-items { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: clamp(12px, 3vw, 42px); max-width: 1280px; margin: 0 auto; }
@@ -116,8 +117,24 @@ html.is-cinematic .timeline { height: var(--timeline); }
 html.is-cinematic .scene { position: sticky; top: 0; height: 100svh; overflow: hidden; background: #0b0b0c; }
 html.is-cinematic .hud { position: absolute; inset: 0 0 auto; z-index: 5; pointer-events: none; padding-top: 22px; }
 html.is-cinematic .hud a { pointer-events: auto; }
-html.is-cinematic .scroll-hint { display: block; font: 13px/1.4 var(--mono); color: #c9c7c1; margin: 0; }
-html.is-cinematic .scroll-hint span { padding-left: 12px; }
+html.is-cinematic .scroll-hint { display: inline-flex; align-items: center; gap: 10px; font: 13px/1.4 var(--mono); color: #c9c7c1; margin: 0; }
+.mouse { position: relative; width: 15px; height: 24px; border: 1.5px solid currentColor; border-radius: 8px; flex: none; }
+.mouse-wheel { position: absolute; left: 50%; top: 5px; width: 2px; height: 5px; border-radius: 1px; background: currentColor; animation: mouse-wheel 1.35s ease-in-out infinite; }
+@keyframes mouse-wheel { 0% { opacity: 0; transform: translate(-50%, 0); } 35% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, 7px); } }
+.scene-notes { display: none; }
+html.is-cinematic .frost { background: rgba(8, 10, 12, .4); -webkit-backdrop-filter: blur(12px) saturate(1.2); backdrop-filter: blur(12px) saturate(1.2); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08); border-radius: 12px; }
+html.is-cinematic .identity.frost { padding: 10px 14px; }
+html.is-cinematic .scroll-hint.frost { padding: 8px 14px; }
+html.is-cinematic .classic.frost { padding: 10px 14px; }
+html.is-cinematic .scene-notes { display: block; position: absolute; inset: 0; z-index: 4; pointer-events: none; }
+html.is-cinematic .scene-notes a { pointer-events: auto; color: inherit; text-decoration: none; }
+.note-script { position: absolute; right: 4.5%; bottom: 36%; margin: 0; padding: 8px 12px; text-align: right; color: #f4f0e8; font: italic 22px/1.15 "Snell Roundhand", "Segoe Script", "Bradley Hand", cursive; }
+.note-knob { position: absolute; left: 50%; bottom: calc(clamp(130px, 18svh, 194px) + 12px); transform: translateX(-50%); margin: 0; padding: 8px 16px 10px; text-align: center; color: #eeeae1; font: 11px/1.25 var(--mono); letter-spacing: .16em; text-transform: uppercase; }
+.note-knob span { display: block; }
+.chev { display: block; width: 8px; height: 8px; margin: 7px auto 0; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); animation: chev-drop 1.6s ease-in-out infinite; }
+@keyframes chev-drop { 0%, 100% { transform: translateY(0) rotate(45deg); opacity: .45; } 50% { transform: translateY(4px) rotate(45deg); opacity: 1; } }
+.note-plain { position: absolute; right: 3%; bottom: calc(clamp(130px, 18svh, 194px) + 12px); margin: 0; padding: 8px 12px; text-align: right; color: #eeeae1; font: 11px/1.35 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.note-plain span { display: block; margin-top: 3px; letter-spacing: 0; text-transform: none; font: 12px/1.35 var(--sans); color: #c9c4ba; }
 html.is-cinematic .stage { position: absolute; pointer-events: none; }
 html.is-cinematic .hero-still, html.is-cinematic .scene-video, html.is-cinematic #view { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; }
 html.is-cinematic .hero-still { display: block; visibility: hidden; }
@@ -162,7 +179,7 @@ html.is-cinematic .glass-fx { display: block; pointer-events: none; position: ab
 .glass-fx .sync { opacity: 0; background: linear-gradient(transparent 46%, #d1e3ee55 49%, transparent 52%); }
 .is-tuning .sync { animation: tune 200ms ease-out; }
 @keyframes tune { 0% { opacity: .7; transform: translateY(-40%); } 100% { opacity: 0; transform: translateY(40%); } }
-html.is-cinematic .dock { position: absolute; inset: auto 0 0; height: clamp(130px, 18svh, 194px); padding: 10px 4vw 9px; background: #07090a; }
+html.is-cinematic .dock { position: absolute; inset: auto 0 0; z-index: 6; height: clamp(130px, 18svh, 194px); padding: 10px 4vw 9px; background: #07090a; }
 html.is-cinematic .dock-items { max-width: 1080px; }
 html.is-cinematic .dock-btn { gap: 5px; }
 html.is-cinematic .mini-label { font-size: 11px; }
@@ -251,6 +268,8 @@ html.is-cinematic .dock-track { display: block; position: absolute; left: 0; rig
 }
 
 .page-cv a { color: inherit; }
+.cv-contact .with-icon,
+.job-head .with-icon { gap: .35em; }
 
 .cv section { margin-top: 28px; }
 
@@ -264,7 +283,7 @@ html.is-cinematic .dock-track { display: block; position: absolute; left: 0; rig
   text-transform: uppercase;
 }
 
-.cv h3 { margin: 0; font-size: 17px; font-weight: 600; }
+.cv h3 { margin: 0; font-size: 17px; font-weight: 600; display: flex; align-items: center; gap: 8px; }
 
 .job { margin: 0 0 16px; }
 
@@ -302,8 +321,7 @@ html.is-cinematic .dock-track { display: block; position: absolute; left: 0; rig
 
 @media (min-width: 700px) {
   .cv-skills { grid-template-columns: 1fr 1fr; }
-  .cv-skills div:last-child,
-  .cv-skills div:nth-child(7) { grid-column: 1 / -1; grid-template-columns: 140px 1fr; }
+  .cv-skills div:last-child { grid-column: 1 / -1; grid-template-columns: 140px 1fr; }
 }
 
 @media print {
@@ -323,7 +341,7 @@ html.is-cinematic .dock-track { display: block; position: absolute; left: 0; rig
 }
 .page-cv { color-scheme: light; }
 @media print {
-  .page-home .hud, .page-home .dock, .page-home .screen-controls, .page-home .glass-fx { display: none !important; }
+  .page-home .hud, .page-home .dock, .page-home .screen-controls, .page-home .glass-fx, .page-home .scene-notes { display: none !important; }
   .page-home .timeline, .page-home .scene, .page-home .stage, .page-home .glass, .page-home .chapters, .page-home .channel, .page-home .chapter, .page-home .sheet { position: static !important; height: auto !important; width: auto !important; overflow: visible !important; visibility: visible !important; }
   .page-home .chapter { color: #111; background: white; padding: 24px; break-inside: avoid; }
   .page-home .scene-art, .page-home .chapter::after { display: none; }
@@ -369,7 +387,7 @@ html.is-cinematic .glass { z-index: 2; }
 @keyframes lamp-breathe { 0%, 100% { opacity: .55; } 37% { opacity: .8; } 39% { opacity: .64; } 42% { opacity: .78; } 70% { opacity: .6; } }
 @keyframes window-glow { 0%, 100% { opacity: .08; } 35% { opacity: .38; } 65% { opacity: .16; } }
 @keyframes steam-rise { 0% { transform: translate(0, 8%) scale(.6, .5); opacity: 0; } 20% { opacity: .6; } 65% { opacity: .3; } 100% { transform: translate(20%, -38%) scale(1.6, 1.2); opacity: 0; } }
-@media (prefers-reduced-motion: reduce) { .room-effects, .snow, .flicker { display: none !important; } }
+@media (prefers-reduced-motion: reduce) { .room-effects, .snow, .flicker, .mouse-wheel, .chev { animation: none !important; } .room-effects, .snow, .flicker { display: none !important; } }
 
 /* Worn phosphor, imperfect focus and stronger room life. */
 html.is-cinematic .glass { filter: saturate(.70) contrast(1.01) brightness(1.07); }
@@ -399,14 +417,46 @@ html.is-cinematic .vignette { background: radial-gradient(ellipse at 48% 48%, tr
 .steam span:nth-child(6) { animation-duration: 5s; }
 .steam span:nth-child(n + 7) { display: none; }
 @keyframes steam-rise { 0% { transform: translate(0, 8%) scale(.55, .45); opacity: 0; } 18% { opacity: .5; } 62% { opacity: .28; } 100% { transform: translate(18%, -42%) scale(1.5, 1.2); opacity: 0; } }
+html.is-cinematic .contact-list { gap: 8px; margin-bottom: 12px; }
+html.is-cinematic .page-contact .page-body { margin-top: 14px; }
+html.is-cinematic .page-skills .skills-overview { gap: 11px 18px; }
+html.is-cinematic .skills-overview dd { font-size: 15px; line-height: 1.32; }
 .project-stack { font-size: 14px; color: var(--muted); line-height: 1.4; }
 .project-links { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
 .skills-overview { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; margin: 0; }
 .skills-overview dt { font: 13px/1.3 var(--mono); text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
 .skills-overview dd { margin: 0; font-size: 16px; line-height: 1.35; }
 .certification { border-top: 1px solid #cadad733; margin-top: 8px !important; padding-top: 8px; font-size: 14px; color: var(--muted); }
-html.is-cinematic .page-skills .page-heading h2 { font-size: 29px; }
-html.is-cinematic .page-skills .page-body { margin-top: 12px; }
+.project-brand { display: flex; align-items: flex-start; gap: 12px; }
+.letteron-mark { width: 54px; height: auto; flex: none; margin-top: 2px; filter: invert(1) brightness(1.2); }
+.page-cv .letteron-mark { width: 40px; filter: none; }
+html.is-cinematic .page-skills .page-heading h2 { font-size: 26px; }
+html.is-cinematic .page-skills .eyebrow { margin-bottom: 4px; }
+html.is-cinematic .page-skills .page-body { margin-top: 6px; }
+html.is-cinematic .page-skills .skills-overview { gap: 5px 16px; }
+html.is-cinematic .page-skills .skills-overview dt { font-size: 13px; margin-bottom: 1px; }
+html.is-cinematic .page-skills .skills-overview dd { font-size: 15px; line-height: 1.28; }
+html.is-cinematic .page-skills .certification { margin-top: 6px !important; padding-top: 4px; font-size: 14px; }
+html.is-cinematic .page-education .eyebrow { margin-bottom: 4px; }
+html.is-cinematic .page-education .page-heading h2 { font-size: 24px; }
+html.is-cinematic .page-education .page-body { margin-top: 4px; }
+html.is-cinematic .page-education .education h3 { margin-top: 4px; font-size: 16px; line-height: 1.15; }
+html.is-cinematic .page-education .education h3:first-child { margin-top: 0; }
+html.is-cinematic .page-education .education p { font-size: 14px; line-height: 1.2; }
+html.is-cinematic .page-education .meta { font-size: 13px; margin-top: 0; }
+@media (max-width: 800px) {
+  html.is-cinematic, html.is-cinematic body { overflow-x: hidden; }
+  html.is-cinematic .scene-notes { display: none; }
+  html.is-cinematic .hud { flex-wrap: wrap; gap: 8px; padding: 10px 12px 0; }
+  html.is-cinematic .scroll-hint { order: 3; width: 100%; justify-content: center; }
+  html.is-cinematic .identity.frost, html.is-cinematic .classic.frost, html.is-cinematic .scroll-hint.frost { padding: 6px 8px; }
+  html.is-cinematic .mini, html.is-cinematic .mini-caption, html.is-cinematic .dock-foot { display: none; }
+  html.is-cinematic .dock { height: auto; padding: 8px 6px 10px; }
+  html.is-cinematic .page-heading h1, html.is-cinematic .page-heading h2 { font-size: clamp(18px, 7cqw, 26px); }
+  html.is-cinematic .page-body { font-size: 16px; line-height: 1.35; }
+  html.is-cinematic .role { font-size: 14px; }
+  html.is-cinematic .sheet.can-scroll { pointer-events: auto; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+}
 html.is-cinematic .page-dense .role { font-size: 16px; }
 html.is-cinematic .page-dense .page-body { margin-top: 12px; }
 html.is-cinematic .page-dense .achievements li { margin-bottom: 9px; }

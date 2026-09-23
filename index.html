@@ -1,374 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nan, Fang-Ying | Problem Solver!</title>
-    <meta name="description" content="Portfolio of Nan, Fang-Ying, Senior Software Engineer specializing in JavaScript, TypeScript, Python, React.js, Node.js, FastAPI, MySQL and AWS.">
-    <meta name="keywords" content="Nan, Fang-Ying, Problem Solver, Software Engineer, Full Stack Developer, JavaScript, TypeScript, React, Node.js, Python, FastAPI, MySQL and AWS">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nan Fang-Ying — Senior / Staff Software Engineer</title>
+  <meta name="description"
+    content="Software for people. Explore Nan Fang-Ying’s work in AI systems, FinTech and HealthTech through an interactive television portfolio.">
+  <meta name="theme-color" content="#090c0f">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='2' y='5' width='20' height='15' rx='4' fill='%230c1721' stroke='%23b4c6d1'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=crt-25">
+  <script src="script.js?v=crt-23" defer></script>
 </head>
-<body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container header-content">
-            <a href="#home" class="logo">
-                <span class="logo-text">NaN</span>
-            </a>
-            
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
-                <a href="#home" class="nav-item active" data-section="home">Home</a>
-                <a href="#about" class="nav-item" data-section="about">About</a>
-                <a href="#experience" class="nav-item" data-section="experience">Experience</a>
-                <a href="#projects" class="nav-item" data-section="projects">Certificate & Projects</a>
-                <a href="#education" class="nav-item" data-section="education">Education</a>
-                <!-- <a href="#blog" class="nav-item" data-section="blog">Blog</a> -->
-                <a href="#contact" class="nav-item" data-section="contact">Contact Me</a>
-            </nav>
 
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
-                <span class="hamburger"></span>
-            </button>
+<body class="page-home"><svg class="crt-definitions" aria-hidden="true" width="0" height="0"
+    xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="crt-glass-shape" clipPathUnits="objectBoundingBox">
+        <path
+          d="M .09 .024 C .26 -.007 .74 .003 .91 .054 C .97 .075 .986 .125 .991 .24 C 1 .43 1 .66 .985 .84 C .979 .933 .948 .963 .87 .976 C .61 1 .3 1 .105 .979 C .038 .967 .014 .926 .009 .842 C -.001 .65 .001 .39 .014 .195 C .02 .089 .04 .043 .09 .024 Z" />
+      </clipPath>
+      <filter id="crt-ink" x="-5%" y="-10%" width="110%" height="120%" color-interpolation-filters="sRGB">
+        <feComponentTransfer>
+          <feFuncA type="discrete" tableValues="0 .25 .8 1" />
+        </feComponentTransfer>
+      </filter>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7" />
+        <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path d="M8 3.5h2.2l1.2 3.2-1.7 1a11 11 0 0 0 5.6 5.6l1-1.7 3.2 1.2V15a2 2 0 0 1-2.2 2A14.5 14.5 0 0 1 5 6.7 2 2 0 0 1 7 4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M12 21s6.5-5.6 6.5-10.2a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.7" />
+        <circle cx="12" cy="10.6" r="2" fill="none" stroke="currentColor" stroke-width="1.7" />
+      </symbol>
+      <symbol id="i-link" viewBox="0 0 24 24">
+        <path d="M14 5h5v5M19 5l-8.5 8.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+        <path d="M17 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+      </symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24">
+        <path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        <path d="M14 3v5h5M8 13h8M8 17h5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10.2 10.2 0 0 0 22 12.2C22 6.6 17.5 2 12 2z" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M4.7 3.3a1.8 1.8 0 1 0 .1 3.6 1.8 1.8 0 0 0-.1-3.6zM3.2 8.8h3V21h-3V8.8zM9.9 8.8h2.9v1.7h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7V21h-3v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-3V8.8z" />
+      </symbol>
+    </defs>
+  </svg><a class="skip" href="#about">Skip to content</a><a class="skip skip-cv" href="cv.html">Skip to classic
+    resume</a>
+  <div class="timeline" id="timeline">
+    <div class="scene">
+      <header class="hud"><a class="identity frost" href="#about" data-channel-link="about"><span class="identity-name">Nan
+            Fang-Ying</span><span class="identity-role">Senior / Staff Software Engineer<br>AI Systems</span></a>
+        <p class="scroll-hint frost" id="scroll-hint">Scroll to explore <span class="mouse" aria-hidden="true"><span class="mouse-wheel"></span></span></p>
+        <div class="classic frost"><a href="cv.html">Classic view <span aria-hidden="true">→</span></a>
+          <p>Prefer a traditional resume?</p>
+          <a href="cv.html">View the clean version →</a>
         </div>
-
-        <!-- Mobile Navigation -->
-        <div class="mobile-nav" id="mobileNav">
-            <a href="#home" class="mobile-nav-item" data-section="home">Home</a>
-            <a href="#about" class="mobile-nav-item" data-section="about">About</a>
-            <a href="#experience" class="mobile-nav-item" data-section="experience">Experience</a>
-            <a href="#projects" class="mobile-nav-item" data-section="projects">Certificate & Projects</a>
-            <a href="#education" class="mobile-nav-item" data-section="education">Education</a>
-            <!-- <a href="#blog" class="mobile-nav-item" data-section="blog">Blog</a> -->
-            <a href="#contact" class="mobile-nav-item" data-section="contact">Contact Me</a>
+      </header>
+      <div class="stage" id="stage"><img class="hero-still" id="hero-still" data-src="assets/images/frames/frame_01.png"
+          width="1672" height="941"
+          alt="A vintage television in a dark room, with a robotic hand on its tuning knob."><video id="scene-video"
+          class="scene-video" muted playsinline preload="none" aria-hidden="true"></video><canvas id="view"
+          aria-hidden="true"></canvas>
+        <div class="room-effects" aria-hidden="true">
+          <div class="lamp"></div>
+          <div class="city-lights"><i style="--light:#fff3de;left:94.2%;top:32.2%;--delay:-0.0s"></i><i
+              style="--light:#ff554b;left:96.2%;top:32.4%;--delay:-0.67s"></i><i
+              style="--light:#79f1b4;left:98.1%;top:32.1%;--delay:-1.34s"></i><i
+              style="--light:#ffd46b;left:94.2%;top:35.7%;--delay:-2.0100000000000002s"></i><i
+              style="--light:#fff3de;left:96.1%;top:35.5%;--delay:-2.68s"></i><i
+              style="--light:#ff554b;left:97.4%;top:36.1%;--delay:-3.35s"></i><i
+              style="--light:#79f1b4;left:94.1%;top:39.0%;--delay:-4.0200000000000005s"></i><i
+              style="--light:#ffd46b;left:95.5%;top:39.1%;--delay:-4.69s"></i><i
+              style="--light:#fff3de;left:91.9%;top:30.8%;--delay:-5.36s"></i><i
+              style="--light:#ff554b;left:93.8%;top:28.2%;--delay:-6.03s"></i><i
+              style="--light:#fff3de;left:97.8%;top:28.8%;--delay:-.4s"></i><i
+              style="--light:#79f1b4;left:96.6%;top:30.6%;--delay:-1.1s"></i><i
+              style="--light:#ffd46b;left:98.4%;top:34.4%;--delay:-1.8s"></i><i
+              style="--light:#ff554b;left:95.2%;top:33.6%;--delay:-2.2s"></i></div>
+          <div class="steam">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
         </div>
-    </header>
-
-    <!-- Animated Background -->
-    <div class="animated-background">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+        <div class="glass" id="glass">
+          <main class="chapters" id="chapters">
+            <section class="channel" data-channel-group="about" aria-label="About">
+              <article class="chapter page-intro" id="about" data-channel="about" data-art="about"
+                aria-labelledby="about-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">about <span> / Hello, I’m Nan</span></p>
+                    <h1 id="about-title" tabindex="-1">Nan Fang-Ying</h1>
+                    <p class="role">Senior / Staff Software Product Engineer / Manager / Agentic AI</p>
+                  </header>
+                  <p class="quiet">Based in Zurich. Building for people.</p>
+                  <!-- <div class="page-body"><p class="hero-line">Turning complex problems<br>into useful products with AI.</p></div> -->
+                  <div class="page-body">
+                    <p>Senior / Staff Software Engineer with 9+ years building and leading production software across
+                      regulated FinTech and HealthTech. Skilled at turning ambiguous business problems into rapid
+                      prototypes, production architecture, and shipped AI and agentic products. Delivered 10–15%
+                      conversion gains, multi-million-euro AUM growth, and 200+ hours of annual automation while
+                      building LLM workflows, agentic systems, event-driven services, and cloud platforms.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="about-direction" data-channel="about" data-art="about"
+                aria-labelledby="about-direction-title">
+                <!-- <div class="scene-art" aria-hidden="true"></div><div class="sheet">
+      <header class="page-heading"><p class="eyebrow">about <span> / Summary</span></p>
+      <h2 id="about-direction-title" tabindex="-1">Product-minded.</h2>
+      </header>
+      <div class="page-body"><p>Senior / Staff Software Engineer with 9+ years building and leading production software across regulated FinTech and HealthTech. Skilled at turning ambiguous business problems into rapid prototypes, production architecture, and shipped AI and agentic products. Delivered 10–15% conversion gains, multi-million-euro AUM growth, and 200+ hours of annual automation while building LLM workflows, agentic systems, event-driven services, and cloud platforms.</p></div>
+    </div></article></section><section class="channel" data-channel-group="experience" aria-label="Experience"><article class="chapter page-impact" id="experience" data-channel="experience" data-art="moonfare" aria-labelledby="experience-title"> -->
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Experience <span> / Selected impact</span></p>
+                    <h2 id="experience-title" tabindex="-1">Engineering that moves<br>the business forward.</h2>
+                    <p class="meta">Moonfare · Engineering leadership · 2021–2025</p>
+                  </header>
+                  <div class="page-body">
+                    <dl class="impact-metrics">
+                      <div>
+                        <dt>7–8</dt>
+                        <dd>Engineers led</dd>
+                      </div>
+                      <div>
+                        <dt>10–15%</dt>
+                        <dd>Conversion gains</dd>
+                      </div>
+                      <div>
+                        <dt>200+</dt>
+                        <dd>Hours saved / year</dd>
+                      </div>
+                    </dl>
+                    <p class="quiet">Contributed to multi-million-euro AUM growth.</p><a class="text-link"
+                      href="#work-independent" data-page="work-independent">Explore the career journey →</a>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="work-independent" data-channel="experience" data-art="letteron"
+                aria-labelledby="work-independent-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 1/9</span></p>
+                    <h2 id="work-independent-title" tabindex="-1">Independent</h2>
+                    <p class="role">AI Product Engineer / Agentic Systems</p>
+                    <p class="meta">Zurich · May 2026 – Present</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                   <li><strong>AI:</strong> Idempotent jobs + versioned structured outputs</li> <li><strong>Evals:</strong> Deterministic checks for dates, amounts & IBANs</li> <li><strong>Safety:</strong> Hard gates for injection, leakage & hallucinated critical fields</li> <li><strong>Reliability:</strong> Exactly-once credit commit/refund semantics</li> <li><strong>Privacy:</strong> Content-free logs with scrubbed Sentry telemetry</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="work-ahead" data-channel="experience" data-art="health"
+                aria-labelledby="work-ahead-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 2/9</span></p>
+                    <h2 id="work-ahead-title" tabindex="-1">Ahead Health</h2>
+                    <p class="role">Senior Product Engineer</p>
+                    <p class="meta">Zurich · Feb 2026 – Apr 2026</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>Shipped a brownfield membership MVP within weeks, integrating hundreds of existing users,
+                        Stripe payments, legacy treatment purchases, and membership discounts without disrupting live
+                        patient operations.</li>
+                      <li>Productionized BAML pipelines on GCP, transforming blood-test and MRI reports into structured
+                        application data.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter page-dense" id="work-moonfare" data-channel="experience" data-art="moonfare"
+                aria-labelledby="work-moonfare-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 3/9</span></p>
+                    <h2 id="work-moonfare-title" tabindex="-1">Moonfare</h2>
+                    <p class="role">Full Stack → Staff Engineer / Engineering Manager</p>
+                    <p class="meta">Berlin · Feb 2020 – Sep 2025</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+<li>Led  8+ engineers team while staying hands-on, translating ambiguous business needs into roadmaps and production solutions.</li>
+<li>Automated workflows, improving conversion by 10–15%, contributing multi-million AUM growth, saving 200+ hours annually.</li>
+<li>Optimized a large React app and SQL-heavy backend, cutting render time by 20% and API latency by 15–20%.</li>
+<li>Built 5+ event-driven microservices with AWS Lambda and SQS.</li>
+<li>Improved delivery quality and release confidence through CI/CD, testing, and AI-assisted workflows.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="work-plusdental" data-channel="experience" data-art="health"
+                aria-labelledby="work-plusdental-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 4/9</span></p>
+                    <h2 id="work-plusdental-title" tabindex="-1">PlusDental</h2>
+                    <p class="role">Software Engineer · JavaScript</p>
+                    <p class="meta">Berlin · Jul 2018 – Jan 2020</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>Migrated MERN to Next.js, Redux and styled-components; rebuilt mobile apps in React Native.
+                      </li>
+                      <li>Internationalized care for 10K+ users: PageSpeed 50 → 80+, time to interactive under 800ms.
+                      </li>
+                      <li>Delivered 3D teeth models, personalized care plans and GraphQL API design.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="work-herobear" data-channel="experience" data-art="career"
+                aria-labelledby="work-herobear-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 5/9</span></p>
+                    <h2 id="work-herobear-title" tabindex="-1">HeroBear</h2>
+                    <p class="role">Full Stack Engineer</p>
+                    <p class="meta">Taiwan · Apr 2016 – Nov 2017</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>Lead full stack for a services marketplace. Node.js, Meteor, React, and MongoDB, deployed on
+                        AWS.</li>
+                      <li>Designed the UI with the design team and shipped Android and iOS apps in React Native. Managed
+                        contract designers and developers.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="work-here" data-channel="experience" data-art="career"
+                aria-labelledby="work-here-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 6/9</span></p>
+                    <h2 id="work-here-title" tabindex="-1">HERE / Nokia</h2>
+                    <p class="role">QA / Release Engineer (Intern)</p>
+                    <p class="meta">Berlin · May 2015 – Mar 2017</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>Maintained Ruby, Python, and Bash automation in Jenkins, including nightly end-to-end runs on
+                        Samsung devices for HERE Maps and Navigator on Tizen.</li>
+                      <li>Supported C++ development and debugging. Bridged HERE and Samsung engineering, and wrote
+                        Samsung release reports with results, notes, and known issues.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter page-dense" id="work-ntu-research" data-channel="experience" data-art="career"
+                aria-labelledby="work-ntu-research-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 7/9</span></p>
+                    <h2 id="work-ntu-research-title" tabindex="-1">National Taiwan University</h2>
+                    <p class="role">Graduate Research & Teaching Assistant</p>
+                    <p class="meta">Taipei</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li><b>Research · Feb–Jul 2013.</b> C++/MATLAB aerosol analysis, a C# lab tool, equipment
+                        calibration and manufacturer coordination.</li>
+                      <li><b>Teaching · Jan–Aug 2011.</b> Freshman structure design using SketchUp and water-jet
+                        workflows; lectures and office hours.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="work-maa" data-channel="experience" data-art="career"
+                aria-labelledby="work-maa-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 8/9</span></p>
+                    <h2 id="work-maa-title" tabindex="-1">MAA Engineering</h2>
+                    <p class="role">Student Assistant Programmer</p>
+                    <p class="meta">New Taipei City · Apr 2011 – Apr 2012</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>Built an auto-check algorithm in C# for legal and usability review of the Taipei Metro BIM
+                        model, and visualized results in Revit.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="work-panunited" data-channel="experience" data-art="career"
+                aria-labelledby="work-panunited-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">Work Experience -- <span> 9/9</span></p>
+                    <h2 id="work-panunited-title" tabindex="-1">PanUnited</h2>
+                    <p class="role">Intern Assistant Engineer</p>
+                    <p class="meta">Singapore · Jun 2007 – Sep 2007</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>Supported concrete and asphalt lab work, site monitoring, road drawings, and office
+                        documentation.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </section>
+            <section class="channel" data-channel-group="projects" aria-label="Projects">
+              <article class="chapter " id="projects" data-channel="projects" data-art="letteron"
+                aria-labelledby="projects-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <div class="project-brand">
+                      <img class="letteron-mark" src="assets/images/letteron-mascot.png" width="133" height="150" alt="">
+                      <div>
+                        <p class="eyebrow">projects <span> / Selected work</span></p>
+                        <h2 id="projects-title" tabindex="-1">LetterON</h2>
+                        <p class="role">Official documents. Clear next steps.</p>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>AI for official documents: OCR, reasoning, translation, classification, validation and
+                        deadlines.</li>
+                      <li>Reliable async jobs: idempotency, authenticated workers, retries, metering, refunds and
+                        observability.</li>
+                    </ul>
+                    <p class="project-stack">Web/mobile · Gemini Vision · React · FastAPI<br>Supabase · GCP · Vercel</p>
+                    <div class="project-links"><a class="with-icon" href="https://letteron.app/" target="_blank"
+                        rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-link" /></svg>Visit LetterON</a><a
+                        class="with-icon" href="https://github.com/NaN-NaN-NaN/LetterON-Google-AI-Sutdio" target="_blank"
+                        rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github" /></svg>Repository</a></div>
+                  </div>
+                </div>
+              </article>
+              <article class="chapter " id="rageasy" data-channel="projects" data-art="rageasy"
+                aria-labelledby="rageasy-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">projects <span> / 04 / Retrieval</span></p>
+                    <h2 id="rageasy-title" tabindex="-1">RagEasy</h2>
+                    <p class="role">Local-first document intelligence</p>
+                  </header>
+                  <div class="page-body">
+                    <ul class="achievements">
+                      <li>Local-first document RAG assistant using Python, LangChain, Vertex AI, ChromaDB, and Ollama,
+                        with semantic retrieval and answer-relevance evaluations.</li>
+                    </ul><a class="text-link with-icon" data-contact="rageasy" href="https://github.com/NaN-NaN-NaN/easy-rag"
+                      target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github" /></svg>Explore the repository</a>
+                  </div>
+                </div>
+              </article>
+            </section>
+            <section class="channel" data-channel-group="skills" aria-label="Skills">
+              <article class="chapter page-skills" id="skills" data-channel="skills" data-art="skills"
+                aria-labelledby="skills-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">skills <span> / Selected</span></p>
+                    <h2 id="skills-title" tabindex="-1">Skills</h2>
+                  </header>
+                  <div class="page-body">
+                    <dl class="skills-overview">
+                      <div>
+                        <dt>Languages</dt>
+                        <dd>TypeScript, JavaScript, Python, SQL, C++</dd>
+                      </div>
+                      <div>
+                        <dt>Frontend</dt>
+                        <dd>React, Next.js, React Native, Redux, Tailwind</dd>
+                      </div>
+                      <div>
+                        <dt>Backend</dt>
+                        <dd>FastAPI, NestJS, Node.js, REST, GraphQL</dd>
+                      </div>
+                      <div>
+                        <dt>Databases</dt>
+                        <dd>PostgreSQL, MySQL, MongoDB, Redis</dd>
+                      </div>
+                      <div>
+                        <dt>AI</dt>
+                        <dd>LLM workflows, agents, RAG, BAML, MCP, evals, Gemini, Vertex, Ollama</dd>
+                      </div>
+                      <div>
+                        <dt>Cloud</dt>
+                        <dd>AWS, GCP, Docker, Terraform, Vercel, CI/CD</dd>
+                      </div>
+                      <div>
+                        <dt>Product</dt>
+                        <dd>DDD, testing, observability, i18n, security, GDPR</dd>
+                      </div>
+                      <div>
+                        <dt>Leadership</dt>
+                        <dd>Roadmaps, mentoring, compliance, stakeholders</dd>
+                      </div>
+                    </dl>
+                    <p class="certification">AWS Solutions Architect – Associate</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+            <section class="channel" data-channel-group="education" aria-label="Education">
+              <article class="chapter page-education" id="about-education" data-channel="education" data-art="career"
+                aria-labelledby="about-education-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">education <span> / Degrees</span></p>
+                    <h2 id="about-education-title" tabindex="-1">An engineering foundation.</h2>
+                  </header>
+                  <div class="page-body">
+                    <div class="education">
+                      <h3>Technische Universität Berlin</h3>
+                      <p>M.S. Geo Information</p>
+                      <p class="meta">Berlin · 2013–2018</p>
+                      <h3>EIT Climate-KIC</h3>
+                      <p>Entrepreneurship and Climate Change Engineering</p>
+                      <p class="meta">2015</p>
+                      <h3>National Taiwan University</h3>
+                      <p>M.S. Computer Aided Engineering</p>
+                      <p class="meta">Taipei · 2010–2012</p>
+                      <h3>National Taiwan University</h3>
+                      <p>B.S. Civil Engineering</p>
+                      <p class="meta">Taipei · 2004–2008</p>
+                      <h3>Nanyang Technological University</h3>
+                      <p>Summer exchange, Engineering</p>
+                      <p class="meta">Singapore · 2007</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </section>
+            <section class="channel" data-channel-group="contact" aria-label="Contact">
+              <article class="chapter page-contact" id="contact" data-channel="contact" data-art="contact"
+                aria-labelledby="contact-title">
+                <div class="scene-art" aria-hidden="true"></div>
+                <div class="sheet">
+                  <header class="page-heading">
+                    <p class="eyebrow">contact <span> / Open a conversation</span></p>
+                    <h2 id="contact-title" tabindex="-1">Let’s build<br>something useful.</h2>
+                  </header>
+                  <div class="page-body">
+                    <ul class="contact-list">
+                      <li><a class="with-icon" data-contact="email" href="mailto:nanfangying1@gmail.com"><svg class="ico" aria-hidden="true"><use href="#i-mail" /></svg>nanfangying1@gmail.com</a></li>
+                      <li><a class="with-icon" href="tel:+41767965606"><svg class="ico" aria-hidden="true"><use href="#i-phone" /></svg>+41 76 796 5606</a></li>
+                      <li><span class="with-icon"><svg class="ico" aria-hidden="true"><use href="#i-pin" /></svg>Zurich, Switzerland · Permit B</span></li>
+                      <li><a class="with-icon" data-contact="linkedin" href="https://www.linkedin.com/in/nan-fang-ying-483351a7/" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-linkedin" /></svg>LinkedIn</a></li>
+                      <li><a class="with-icon" data-contact="github" href="https://github.com/NaN-NaN-NaN" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github" /></svg>GitHub</a></li>
+                    </ul>
+                    <a class="text-link with-icon" href="cv.html"><svg class="ico" aria-hidden="true"><use href="#i-doc" /></svg>Full resume / Print & save PDF</a>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </main>
+          <nav class="screen-controls" aria-label="Pages in this channel"><button id="page-index" type="button">↖
+              Index</button><span id="page-status" role="status" aria-live="polite" aria-atomic="true"></span><button
+              id="page-prev" type="button" aria-label="Previous page">←</button><button id="page-next" type="button"
+              aria-label="Next page">→</button></nav>
+          <div class="glass-fx" aria-hidden="true">
+            <div class="scanlines"></div>
+            <div class="noise"></div>
+            <div class="snow"></div>
+            <div class="flicker"></div>
+            <div class="reflection"></div>
+            <div class="vignette"></div>
+            <div class="sync"></div>
+          </div>
+        </div>
+      </div>
+      <div class="scene-notes">
+        <p class="note-script frost">Build<br>a more useful<br>tomorrow.</p>
+        <p class="note-knob frost"><span>Scroll</span><span>to turn the knob</span><i class="chev" aria-hidden="true"></i></p>
+        <p class="note-plain frost"><a href="cv.html">Or view the classic version →</a><span>Same content. Just without the animation.</span></p>
+      </div>
+      <nav class="dock" aria-label="Channels">
+        <div class="dock-track" aria-hidden="true"><span id="dock-bar"></span></div>
+        <div class="dock-items"><a class="dock-btn" href="#about" data-channel-link="about"><span
+              class="mini-label"><span class="dock-num">01</span> About</span><span class="mini"
+              aria-hidden="true"><span class="mini-screen" data-art="about"><span>About</span></span><i></i></span><span
+              class="mini-caption">The person behind the work.</span></a><a class="dock-btn" href="#experience"
+            data-channel-link="experience"><span class="mini-label"><span class="dock-num">02</span>
+              Experience</span><span class="mini" aria-hidden="true"><span class="mini-screen"
+                data-art="moonfare"><span>Experience</span></span><i></i></span><span class="mini-caption">Products,
+              teams and measurable impact.</span></a><a class="dock-btn" href="#projects"
+            data-channel-link="projects"><span class="mini-label"><span class="dock-num">03</span> Projects</span><span
+              class="mini" aria-hidden="true"><span class="mini-screen"
+                data-art="letteron"><span>Projects</span></span><i></i></span><span class="mini-caption">AI that makes
+              itself useful.</span></a><a class="dock-btn" href="#skills" data-channel-link="skills"><span
+              class="mini-label"><span class="dock-num">04</span> Skills</span><span class="mini"
+              aria-hidden="true"><span class="mini-screen"
+                data-art="skills"><span>Skills</span></span><i></i></span><span class="mini-caption">From architecture
+              to delivery.</span></a><a class="dock-btn" href="#about-education" data-channel-link="education"><span
+              class="mini-label"><span class="dock-num">05</span> Education</span><span class="mini"
+              aria-hidden="true"><span class="mini-screen"
+                data-art="career"><span>Education</span></span><i></i></span><span class="mini-caption">An engineering
+              foundation.</span></a><a class="dock-btn" href="#contact" data-channel-link="contact"><span
+              class="mini-label"><span class="dock-num">06</span> Contact</span><span class="mini"
+              aria-hidden="true"><span class="mini-screen"
+                data-art="contact"><span>Contact</span></span><i></i></span><span class="mini-caption">A good place to
+              start.</span></a></div>
+        <p class="dock-foot"><span>Nan Fang-Ying</span><span>Software for people. A brighter
+            tomorrow.</span><span>Zurich, Switzerland</span></p>
+      </nav>
     </div>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, Welcome to </br> <span class="gradient-text">NaN's Page</span>
-                </h1>
-                <p class="hero-subtitle">Senior Software Engineer / Engineering Manager / AI Enthusiast / Problem Solver / Wine Lover / snowboarder / ...and more</p>
-                <!-- <p class="hero-description">Building scalable, secure, and efficient systems with over 5 years of experience</p> -->
-                
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="https://raw.githubusercontent.com/NaN-NaN-NaN/NaN-NaN-NaN.github.io/refs/heads/main/CV_NanFangYing_SrFullstackEngineer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        Download Resume
-                    </a>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://github.com/NaN-NaN-NaN" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
-                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nan-fang-ying-483351a7/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-description">
-                Hi there, thanks for visiting my portfolio page! This is Nan, Fang-Ying, aka NaN, Mr. Not A Number!! I’m a Senior Software Engineer and Tech Lead with a focus on building scalable, reliable, and intelligent systems. My background spans full-stack development, cloud infrastructure, and team leadership — delivering impactful products with TypeScript, Python, React, NestJS, and AWS. I thrive in environments that value technical excellence, clear architecture, and continuous improvement through automation and strong engineering practices.
-            </p> 
-            </div>
-
-            <div class="about-text">
-                <p class="section-description">
-                    Recently I’ve become deeply invested in AI-driven development — using large language models and automation to make software smarter and more efficient. I’ve built projects like LetterOn, an AI mail assistant that digitizes physical letters using OCR and NLP, and easy-rag, a Retrieval-Augmented Generation CLI that validates responses using LLM-based fuzzy testing. These experiments combine my love for elegant engineering with the creative potential of generative AI.
-    
-                </p>
-            </div>
-            <div class="about-text">
-                <p class="section-description">
-                    Outside of coding, I find balance on the slopes and in the cellar. I’m an enthusiastic snowboarder and a WSET Level 3 wine certificate holder, always chasing depth — whether it’s carving clean lines in powder or exploring the complexity behind a good Bordeaux. For me, technology, snow, and wine share the same essence: precision, curiosity, and craft.
-                </p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Full Stack Development</h3>
-                    <p class="feature-description">Expertise in JavaScript, TypeScript, Python, React.js, Node.js, Next.js, Nest.js, FastAPI, MySQL, MongoDB </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Infra Solutions</h3>
-                    <p class="feature-description">Proficient with AWS services including EC2, S3, SQS, EventBridge, Lambda, Step Functions, VPC, and etc...</p>
-                </div>
-
-                <!-- <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Team Leadership</h3>
-                    <p class="feature-description"></p>
-                </div> -->
-
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="feature-title">Team & Global Collaboration</h3>
-                    <p class="feature-description">Led diverse teams across development, design, DevOps, and QA. Coordinated with remote teams across the US, China, Poland, Portugal, and Taiwan</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-                <p class="section-description">My professional journey and key accomplishments</p>
-            </div>
-
-            <div class="timeline">
-                <!-- Experience items will be added via JavaScript -->
-            </div>
-
-            <!-- Skills Section -->
-            <div id="skills" class="skills-section">
-                <h3 class="skills-title">Technical Skills</h3>
-                <div class="skills-grid">
-                    <!-- Skills will be added via JavaScript -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title"> Certificate</h2>
-                <h3 class="certificate"> -- AWS Certified Solutions Architect – Associate <a target="_blank" class="certificate-link"  href="https://www.credly.com/badges/1d2c1432-df66-472f-a059-69d4f2b4008a">
-                    <span class="experience-badge">Show credential</span></a>
-                </h3> 
-                <h3 class="certificate"> -- WSET Level 3 Award in Wines certificate (pass with merit)</h3>
-
-            </div>
-            <div class="section-header">
-                <h2 class="section-title">Projects</h2>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Projects will be added via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <p class="section-description">My academic background</p>
-            </div>
-
-            <div class="education-content">
-
-                <!-- Master of Science, Technische Universität Berlin -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div>
-                            <h3 class="education-degree">Master of Science (M.S.), Geoinformation</h3>
-                            <p class="education-school">Technische Universität Berlin</p>
-                        </div>
-                        <div class="education-meta">
-                            <span class="education-badge">2013 - 2018</span>
-                            <span class="education-location">Berlin, Germany</span>
-                        </div>
-                    </div>
-                    <!-- <p class="education-activities">
-                        Activities: Structure Health Monitoring project for bridge (surveying, digital model, CityGML/KML conversion, website with HTML5/JS), Berlin Moabit area map project, TU Berlin Entrepreneurship Center events, GTEC Entrepreneurship Center events, Impact HUB Berlin startup events, Founder.org startup events.
-                    </p> -->
-                </div>
-            
-                <!-- M.S. CE, National Taiwan University -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div>
-                            <h3 class="education-degree">M.S. CE, Computer-Aided Engineering Division</h3>
-                            <p class="education-school">National Taiwan University</p>
-                        </div>
-                        <div class="education-meta">
-                            <span class="education-badge">2010 - 2012</span>
-                            <span class="education-location">Taipei, Taiwan</span>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Summer exchange student intern, Nanyang Technological University Singapore -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div>
-                            <h3 class="education-degree">Summer Exchange Student Intern, Engineering</h3>
-                            <p class="education-school">Nanyang Technological University Singapore</p>
-                        </div>
-                        <div class="education-meta">
-                            <span class="education-badge">2007</span>
-                            <span class="education-location">Singapore</span>
-                        </div>
-                    </div>
-                    <p class="education-activities">
-                        Activities: Summer exchange student intern
-                    </p>
-                </div>
-            
-                <!-- Bachelor of Science, National Taiwan University -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div>
-                            <h3 class="education-degree">B.S. Civil Engineering</h3>
-                            <p class="education-school">National Taiwan University</p>
-                        </div>
-                        <div class="education-meta">
-                            <span class="education-badge">2004 - 2008</span>
-                            <span class="education-location">Taipei, Taiwan</span>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Summer program, EIT Climate KIC -->
-                <div class="education-card">
-                    <div class="education-header">
-                        <div>
-                            <h3 class="education-degree">Entrepreneurship & Climate Change Engineering </h3>
-                            <p class="education-school">EIT Climate KIC (Summer Program)</p>
-                        </div>
-                        <div class="education-meta">
-                            <span class="education-badge">2015</span>
-                            <span class="education-location">UK / SE / DK</span>
-                        </div>
-                    </div>
-                    <!-- <p class="education-activities">
-                        Activities: Entrepreneurship/startup training, scientific thinking for climate change, engineering methods to tackle climate issues.
-                    </p> -->
-                </div>
-            
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- Blog Section
-    <section id="blog" class="blog-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Blog</h2>
-                <p class="section-description">Thoughts and insights on software development</p>
-            </div>
-
-            <div class="blog-content">
-                <p class="coming-soon">Blog posts coming soon...</p>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-description">Feel free to reach out for collaborations or just a friendly hello</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:nanfangying1@gmail.com">nanfangying1@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        <div>
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/NaN-NaN-NaN" target="_blank" rel="noopener noreferrer">@NaN-NaN-NaN</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/nan-fang-ying-483351a7/" target="_blank" rel="noopener noreferrer">@Nan Fang-Ying</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Nan, Fang-Ying. All rights reserved. (Page Template inspired by Nihal Maskey)</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  </div><noscript>
+    <p class="no-script-note">You’re reading the complete portfolio. <a href="cv.html">Open the printable resume →</a>
+    </p>
+  </noscript>
 </body>
+
 </html>

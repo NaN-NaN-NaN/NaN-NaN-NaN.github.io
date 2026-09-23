@@ -54,7 +54,7 @@ const legacy = (value) => /^assets\/(images|video|audio)\//.test(value);
       await page.goto(base + '?preview=screen');
       await page.waitForFunction(() => Boolean(document.documentElement.dataset.page));
       const cinematic = await page.locator('html').evaluate(el => el.classList.contains('is-cinematic'));
-      assert.equal(cinematic, width >= 1366, `Expected display mode at ${width}`);
+      assert.equal(cinematic, true, `Expected the cinematic scene at ${width}`);
       const ids = await page.locator('.chapter').evaluateAll(els => els.map(el => el.id));
       for (const id of ids) {
         await gotoPage(id);
@@ -130,12 +130,9 @@ const legacy = (value) => /^assets\/(images|video|audio)\//.test(value);
     }
     await gotoPage('rageasy');
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.waitForFunction(() => !document.documentElement.classList.contains('is-cinematic'));
-    assert.equal(await page.locator('#rageasy').evaluate(el => el.getBoundingClientRect().top >= -2 && el.getBoundingClientRect().top < innerHeight), true);
-    await page.setViewportSize({ width: 1440, height: 900 });
     await page.waitForFunction(() => document.documentElement.classList.contains('is-cinematic'));
     assert.equal(await page.locator('html').getAttribute('data-page'), 'rageasy');
-    checks.push('Reading position survives desktop/mobile mode changes');
+    checks.push('Phone keeps the cinematic scene and the current page');
 
     const requestMark = requested.length;
     await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -196,7 +193,7 @@ const legacy = (value) => /^assets\/(images|video|audio)\//.test(value);
     await page.goto(base + '?preview=screen');
     assert.equal(await page.locator('[data-channel="skills"]').count(), 1);
     assert.equal(await page.locator('[data-channel="projects"]').count(), 2);
-    assert.equal(await page.locator('#about-education .education h3').count(), 2);
+    assert.equal(await page.locator('#about-education .education h3').count(), 5);
     assert.equal(await page.locator('#projects a[href="https://letteron.app/"]').count(), 1);
     assert.equal(await page.locator('.chapter[id^="work-moonfare"]').count(), 1);
     const portfolioText = await page.locator('main').textContent();

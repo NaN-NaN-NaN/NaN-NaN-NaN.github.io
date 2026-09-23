@@ -7,8 +7,8 @@ const CONFIG = {
   // The clip's knob turn finishes before the file ends. Map the whole scroll onto that motion.
   motionEnd: 0.75,
   scrollPerPage: 70, // Each scene holds for 70vh of native scrolling.
-  minGlassWidth: 500,
-  minGlassHeight: 410,
+  minGlassWidth: 120,
+  minGlassHeight: 80,
   channels: [
     { id: "about" },
     { id: "experience" },
@@ -40,7 +40,7 @@ function initPortfolio() {
   const groups = [...document.querySelectorAll(".channel")];
   const channelPages = new Map(CONFIG.channels.map(({ id }) => [id, pages.filter((page) => page.dataset.channel === id)]));
   const remembered = new Map(CONFIG.channels.map(({ id }) => [id, 0]));
-  const pointerQuery = matchMedia("(min-width: 1040px) and (hover: hover) and (pointer: fine)");
+  const narrowQuery = matchMedia("(max-width: 800px)");
   const reducedQuery = matchMedia("(prefers-reduced-motion: reduce)");
   // Safe isolated review: no original room image, frame, video or audio is requested.
   const screenPreview = new URLSearchParams(location.search).get("preview") === "screen";
@@ -128,6 +128,7 @@ function initPortfolio() {
     root.dataset.page = selected.id;
     if (updateHash) writeHash(selected.id);
     if (animate && changed) pulse();
+    if (cinematic) requestAnimationFrame(fitSheets);
   }
   function commitStagedPage() {
     const page = stagedPage;
@@ -200,7 +201,7 @@ function initPortfolio() {
   function restoreHash() {
     let id;
     try { id = decodeURIComponent(location.hash.slice(1)); } catch { return false; }
-    const aliases = { "experience-index": "experience", "work-moonfare-2": "work-moonfare", "work-moonfare-3": "work-moonfare", "work-moonfare-engineer": "work-moonfare", "work-moonfare-engineer-2": "work-moonfare", "work-plusdental-2": "work-plusdental", "work-ntu-teaching": "work-ntu-research", "early-software": "work-herobear", "early-research": "work-ntu-research", "letteron-intelligence": "projects", "letteron-engineering": "projects", "skills-product": "skills", "skills-leadership": "skills" };
+    const aliases = { "experience-index": "experience", "work-moonfare-2": "work-moonfare", "work-moonfare-3": "work-moonfare", "work-moonfare-engineer": "work-moonfare", "work-moonfare-engineer-2": "work-moonfare", "work-plusdental-2": "work-plusdental", "work-ntu-teaching": "work-ntu-research", "early-software": "work-herobear", "early-research": "work-ntu-research", "letteron-intelligence": "projects", "letteron-engineering": "projects", "skills-product": "skills", "skills-leadership": "skills", "skills-systems": "skills" };
     id = aliases[id] || id;
     const page = pages.find((item) => item.id === id);
     if (!page) return false;
@@ -210,21 +211,45 @@ function initPortfolio() {
   addEventListener("hashchange", restoreHash);
 
   function stageSize() {
-    const reserve = document.querySelector(".dock").getBoundingClientRect().height;
-    // Reading-mode dock is shorter; use the cinematic design height before switching.
-    const dockHeight = cinematic ? reserve : Math.min(194, Math.max(130, innerHeight * .18));
-    const height = Math.min(innerWidth / ratio, innerHeight - dockHeight);
-    return { width: height * ratio, height };
+    const dockEl = document.querySelector(".dock");
+    const reserve = dockEl.getBoundingClientRect().height || 72;
+    const dockHeight = cinematic ? reserve : Math.min(194, Math.max(64, innerHeight * .14));
+    const availH = Math.max(160, innerHeight - dockHeight);
+    const narrow = narrowQuery.matches;
+    let width;
+    let height;
+    let focus = 0.5;
+    if (narrow) {
+      // Enlarge the frame until the television and the hand still fit across the phone.
+      width = innerWidth / 0.86;
+      height = width / ratio;
+      if (height > availH) {
+        height = availH;
+        width = height * ratio;
+      }
+      focus = 0.52;
+    } else {
+      height = Math.min(innerWidth / ratio, availH);
+      width = height * ratio;
+    }
+    return { width, height, focus, narrow };
   }
   function placeStage(size) {
     stage.style.width = `${size.width}px`;
     stage.style.height = `${size.height}px`;
-    stage.style.left = `${(innerWidth - size.width) / 2}px`;
+    stage.style.left = size.narrow && size.width > innerWidth
+      ? `${innerWidth / 2 - size.width * size.focus}px`
+      : `${(innerWidth - size.width) / 2}px`;
     stage.style.top = `${Math.max(0, (innerHeight - document.querySelector(".dock").getBoundingClientRect().height - size.height) / 2)}px`;
     const dpr = Math.min(devicePixelRatio || 1, 2);
     canvas.width = Math.round(size.width * dpr);
     canvas.height = Math.round(size.height * dpr);
     lastFrame = -1;
+  }
+  function fitSheets() {
+    document.querySelectorAll(".sheet").forEach((sheet) => {
+      sheet.classList.toggle("can-scroll", sheet.scrollHeight > sheet.clientHeight + 8);
+    });
   }
   function observeReading() {
     observer?.disconnect();
@@ -246,12 +271,13 @@ function initPortfolio() {
     const oldMode = cinematic;
     const selected = currentPage();
     const size = stageSize();
-    cinematic = !mediaUnavailable && pointerQuery.matches && !reducedQuery.matches && size.width * .448 >= CONFIG.minGlassWidth && size.height * .656 >= CONFIG.minGlassHeight;
+    cinematic = !mediaUnavailable && !reducedQuery.matches && innerWidth >= 320 && size.width * .448 >= CONFIG.minGlassWidth && size.height * .656 >= CONFIG.minGlassHeight;
     root.classList.toggle("is-cinematic", cinematic);
     if (cinematic) {
-      placeStage(size);
+      placeStage(stageSize());
       observer?.disconnect();
       ensureMedia();
+      requestAnimationFrame(fitSheets);
     } else {
       stage.removeAttribute("style");
       stopTurns();
@@ -461,7 +487,7 @@ function initPortfolio() {
     cancelAnimationFrame(resizeRequest);
     resizeRequest = requestAnimationFrame(() => syncMode());
   }, { passive: true });
-  pointerQuery.addEventListener("change", () => syncMode());
+  narrowQuery.addEventListener("change", () => syncMode());
   reducedQuery.addEventListener("change", () => syncMode());
   addEventListener("pageshow", (event) => { if (event.persisted) { syncMode(); restoreHash(); } });
   const artCanvases = new Map();
