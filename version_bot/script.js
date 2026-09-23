@@ -220,14 +220,9 @@ function initPortfolio() {
     let height;
     let focus = 0.5;
     if (narrow) {
-      // Enlarge the frame until the television and the hand still fit across the phone.
-      width = innerWidth / 0.86;
-      height = width / ratio;
-      if (height > availH) {
-        height = availH;
-        width = height * ratio;
-      }
-      focus = 0.52;
+      height = Math.min(availH, innerWidth / ratio);
+      width = height * ratio;
+      focus = 0.5;
     } else {
       height = Math.min(innerWidth / ratio, availH);
       width = height * ratio;
@@ -237,10 +232,9 @@ function initPortfolio() {
   function placeStage(size) {
     stage.style.width = `${size.width}px`;
     stage.style.height = `${size.height}px`;
-    stage.style.left = size.narrow && size.width > innerWidth
-      ? `${innerWidth / 2 - size.width * size.focus}px`
-      : `${(innerWidth - size.width) / 2}px`;
-    stage.style.top = `${Math.max(0, (innerHeight - document.querySelector(".dock").getBoundingClientRect().height - size.height) / 2)}px`;
+    stage.style.left = `${(innerWidth - size.width) / 2}px`;
+    const dockHeight = document.querySelector(".dock").getBoundingClientRect().height;
+    stage.style.top = `${Math.max(0, (innerHeight - dockHeight - size.height) / 2)}px`;
     const dpr = Math.min(devicePixelRatio || 1, 2);
     canvas.width = Math.round(size.width * dpr);
     canvas.height = Math.round(size.height * dpr);

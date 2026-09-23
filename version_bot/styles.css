@@ -445,7 +445,7 @@ html.is-cinematic .page-education .education h3:first-child { margin-top: 0; }
 html.is-cinematic .page-education .education p { font-size: 14px; line-height: 1.2; }
 html.is-cinematic .page-education .meta { font-size: 13px; margin-top: 0; }
 @media (max-width: 800px) {
-  html.is-cinematic, html.is-cinematic body { overflow-x: hidden; }
+  html.is-cinematic .scene { position: fixed; inset: 0; width: 100%; height: 100dvh; }
   html.is-cinematic .scene-notes { display: none; }
   html.is-cinematic .hud { flex-wrap: wrap; gap: 8px; padding: 10px 12px 0; }
   html.is-cinematic .scroll-hint { order: 3; width: 100%; justify-content: center; }
