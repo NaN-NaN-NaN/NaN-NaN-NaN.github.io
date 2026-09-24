@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nan, Fang-Ying | Problem Solver!</title>
+    <meta name="description" content="Portfolio of Nan, Fang-Ying, Senior Software Engineer specializing in JavaScript, TypeScript, Python, React.js, Node.js, FastAPI, MySQL and AWS.">
+    <meta name="keywords" content="Nan, Fang-Ying, Problem Solver, Software Engineer, Full Stack Developer, JavaScript, TypeScript, React, Node.js, Python, FastAPI, MySQL and AWS">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">
+                <span class="logo-text">NaN</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-item active" data-section="home">Home</a>
+                <a href="#about" class="nav-item" data-section="about">About</a>
+                <a href="#experience" class="nav-item" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-item" data-section="projects">Certificate & Projects</a>
+                <a href="#education" class="nav-item" data-section="education">Education</a>
+                <!-- <a href="#blog" class="nav-item" data-section="blog">Blog</a> -->
+                <a href="#contact" class="nav-item" data-section="contact">Contact Me</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" class="mobile-nav-item" data-section="home">Home</a>
+            <a href="#about" class="mobile-nav-item" data-section="about">About</a>
+            <a href="#experience" class="mobile-nav-item" data-section="experience">Experience</a>
+            <a href="#projects" class="mobile-nav-item" data-section="projects">Certificate & Projects</a>
+            <a href="#education" class="mobile-nav-item" data-section="education">Education</a>
+            <!-- <a href="#blog" class="mobile-nav-item" data-section="blog">Blog</a> -->
+            <a href="#contact" class="mobile-nav-item" data-section="contact">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, Welcome to </br> <span class="gradient-text">NaN's Page</span>
+                </h1>
+                <p class="hero-subtitle">Senior Software Engineer / Engineering Manager / AI Enthusiast / Problem Solver / Wine Lover / snowboarder / ...and more</p>
+                <!-- <p class="hero-description">Building scalable, secure, and efficient systems with over 5 years of experience</p> -->
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://raw.githubusercontent.com/NaN-NaN-NaN/NaN-NaN-NaN.github.io/refs/heads/main/CV_NanFangYing_SrFullstackEngineer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/NaN-NaN-NaN" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nan-fang-ying-483351a7/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                Hi there, thanks for visiting my portfolio page! This is Nan, Fang-Ying, aka NaN, Mr. Not A Number!! I’m a Senior Software Engineer and Tech Lead with a focus on building scalable, reliable, and intelligent systems. My background spans full-stack development, cloud infrastructure, and team leadership — delivering impactful products with TypeScript, Python, React, NestJS, and AWS. I thrive in environments that value technical excellence, clear architecture, and continuous improvement through automation and strong engineering practices.
+            </p> 
+            </div>
+
+            <div class="about-text">
+                <p class="section-description">
+                    Recently I’ve become deeply invested in AI-driven development — using large language models and automation to make software smarter and more efficient. I’ve built projects like LetterOn, an AI mail assistant that digitizes physical letters using OCR and NLP, and easy-rag, a Retrieval-Augmented Generation CLI that validates responses using LLM-based fuzzy testing. These experiments combine my love for elegant engineering with the creative potential of generative AI.
+    
+                </p>
+            </div>
+            <div class="about-text">
+                <p class="section-description">
+                    Outside of coding, I find balance on the slopes and in the cellar. I’m an enthusiastic snowboarder and a WSET Level 3 wine certificate holder, always chasing depth — whether it’s carving clean lines in powder or exploring the complexity behind a good Bordeaux. For me, technology, snow, and wine share the same essence: precision, curiosity, and craft.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Full Stack Development</h3>
+                    <p class="feature-description">Expertise in JavaScript, TypeScript, Python, React.js, Node.js, Next.js, Nest.js, FastAPI, MySQL, MongoDB </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Infra Solutions</h3>
+                    <p class="feature-description">Proficient with AWS services including EC2, S3, SQS, EventBridge, Lambda, Step Functions, VPC, and etc...</p>
+                </div>
+
+                <!-- <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team Leadership</h3>
+                    <p class="feature-description"></p>
+                </div> -->
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Team & Global Collaboration</h3>
+                    <p class="feature-description">Led diverse teams across development, design, DevOps, and QA. Coordinated with remote teams across the US, China, Poland, Portugal, and Taiwan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-description">My professional journey and key accomplishments</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Experience items will be added via JavaScript -->
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills" class="skills-section">
+                <h3 class="skills-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <!-- Skills will be added via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"> Certificate</h2>
+                <h3 class="certificate"> -- AWS Certified Solutions Architect – Associate <a target="_blank" class="certificate-link"  href="https://www.credly.com/badges/1d2c1432-df66-472f-a059-69d4f2b4008a">
+                    <span class="experience-badge">Show credential</span></a>
+                </h3> 
+                <h3 class="certificate"> -- WSET Level 3 Award in Wines certificate (pass with merit)</h3>
+
+            </div>
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projects will be added via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-description">My academic background</p>
+            </div>
+
+            <div class="education-content">
+
+                <!-- Master of Science, Technische Universität Berlin -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-degree">Master of Science (M.S.), Geoinformation</h3>
+                            <p class="education-school">Technische Universität Berlin</p>
+                        </div>
+                        <div class="education-meta">
+                            <span class="education-badge">2013 - 2018</span>
+                            <span class="education-location">Berlin, Germany</span>
+                        </div>
+                    </div>
+                    <!-- <p class="education-activities">
+                        Activities: Structure Health Monitoring project for bridge (surveying, digital model, CityGML/KML conversion, website with HTML5/JS), Berlin Moabit area map project, TU Berlin Entrepreneurship Center events, GTEC Entrepreneurship Center events, Impact HUB Berlin startup events, Founder.org startup events.
+                    </p> -->
+                </div>
+            
+                <!-- M.S. CE, National Taiwan University -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-degree">M.S. CE, Computer-Aided Engineering Division</h3>
+                            <p class="education-school">National Taiwan University</p>
+                        </div>
+                        <div class="education-meta">
+                            <span class="education-badge">2010 - 2012</span>
+                            <span class="education-location">Taipei, Taiwan</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Summer exchange student intern, Nanyang Technological University Singapore -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-degree">Summer Exchange Student Intern, Engineering</h3>
+                            <p class="education-school">Nanyang Technological University Singapore</p>
+                        </div>
+                        <div class="education-meta">
+                            <span class="education-badge">2007</span>
+                            <span class="education-location">Singapore</span>
+                        </div>
+                    </div>
+                    <p class="education-activities">
+                        Activities: Summer exchange student intern
+                    </p>
+                </div>
+            
+                <!-- Bachelor of Science, National Taiwan University -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-degree">B.S. Civil Engineering</h3>
+                            <p class="education-school">National Taiwan University</p>
+                        </div>
+                        <div class="education-meta">
+                            <span class="education-badge">2004 - 2008</span>
+                            <span class="education-location">Taipei, Taiwan</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Summer program, EIT Climate KIC -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3 class="education-degree">Entrepreneurship & Climate Change Engineering </h3>
+                            <p class="education-school">EIT Climate KIC (Summer Program)</p>
+                        </div>
+                        <div class="education-meta">
+                            <span class="education-badge">2015</span>
+                            <span class="education-location">UK / SE / DK</span>
+                        </div>
+                    </div>
+                    <!-- <p class="education-activities">
+                        Activities: Entrepreneurship/startup training, scientific thinking for climate change, engineering methods to tackle climate issues.
+                    </p> -->
+                </div>
+            
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Blog Section
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Blog</h2>
+                <p class="section-description">Thoughts and insights on software development</p>
+            </div>
+
+            <div class="blog-content">
+                <p class="coming-soon">Blog posts coming soon...</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">Feel free to reach out for collaborations or just a friendly hello</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:nanfangying1@gmail.com">nanfangying1@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/NaN-NaN-NaN" target="_blank" rel="noopener noreferrer">@NaN-NaN-NaN</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/nan-fang-ying-483351a7/" target="_blank" rel="noopener noreferrer">@Nan Fang-Ying</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nan, Fang-Ying. All rights reserved. (Page Template inspired by Nihal Maskey)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
