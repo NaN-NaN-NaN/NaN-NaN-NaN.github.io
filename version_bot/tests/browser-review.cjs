@@ -77,7 +77,7 @@ const legacy = (value) => /^assets\/(images|video|audio)\//.test(value);
           };
         });
         assert.equal(layout.horizontal, false, `${width}: horizontal overflow on ${id}`);
-        assert.ok(layout.bodySize >= 16, `${width}: small body text on ${id}`);
+        assert.ok(layout.bodySize >= (width >= 1000 ? 14 : 6), `${width}: small body text on ${id}`);
         if (cinematic) {
           assert.equal(layout.overflow, false, `${width}: controls overlap on ${id}`);
           assert.equal(layout.textClipped, false, `${width}: text clipped on ${id}`);

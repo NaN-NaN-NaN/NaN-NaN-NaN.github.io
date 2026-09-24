@@ -210,31 +210,45 @@ function initPortfolio() {
   }
   addEventListener("hashchange", restoreHash);
 
+  function handheld() {
+    return matchMedia("(pointer: coarse)").matches && Math.min(screen.width, screen.height) <= 540;
+  }
+  function landscapeNow() { return innerWidth > innerHeight + 40; }
+  let viewChoice = sessionStorage.getItem("portfolio-view");
+  function chooseView(choice) {
+    viewChoice = choice;
+    sessionStorage.setItem("portfolio-view", choice);
+    if (choice === "landscape") {
+      const lock = async () => {
+        try { if (!document.fullscreenElement) await document.documentElement.requestFullscreen(); } catch { /* iOS ignores this */ }
+        try { await screen.orientation.lock("landscape"); } catch { /* rotate gate covers this */ }
+      };
+      lock();
+    }
+    syncMode();
+  }
+  document.querySelectorAll("[data-view]").forEach((button) => {
+    button.addEventListener("click", () => chooseView(button.dataset.view));
+  });
+
   function stageSize() {
+    const sideDock = root.classList.contains("is-phone-landscape");
     const dockEl = document.querySelector(".dock");
     const reserve = dockEl.getBoundingClientRect().height || 72;
-    const dockHeight = cinematic ? reserve : Math.min(194, Math.max(64, innerHeight * .14));
+    const dockWidth = sideDock ? 96 : 0;
+    const dockHeight = sideDock ? 0 : (cinematic ? reserve : Math.min(194, Math.max(64, innerHeight * .14)));
+    const availW = Math.max(160, innerWidth - dockWidth);
     const availH = Math.max(160, innerHeight - dockHeight);
-    const narrow = narrowQuery.matches;
-    let width;
-    let height;
-    let focus = 0.5;
-    if (narrow) {
-      height = Math.min(availH, innerWidth / ratio);
-      width = height * ratio;
-      focus = 0.5;
-    } else {
-      height = Math.min(innerWidth / ratio, availH);
-      width = height * ratio;
-    }
-    return { width, height, focus, narrow };
+    const height = Math.min(availW / ratio, availH);
+    const width = height * ratio;
+    return { width, height, sideDock, dockWidth, availH };
   }
   function placeStage(size) {
     stage.style.width = `${size.width}px`;
     stage.style.height = `${size.height}px`;
-    stage.style.left = `${(innerWidth - size.width) / 2}px`;
-    const dockHeight = document.querySelector(".dock").getBoundingClientRect().height;
-    stage.style.top = `${Math.max(0, (innerHeight - dockHeight - size.height) / 2)}px`;
+    const freeW = size.sideDock ? innerWidth - size.dockWidth : innerWidth;
+    stage.style.left = `${Math.max(0, (freeW - size.width) / 2)}px`;
+    stage.style.top = `${Math.max(0, (size.availH - size.height) / 2)}px`;
     const dpr = Math.min(devicePixelRatio || 1, 2);
     canvas.width = Math.round(size.width * dpr);
     canvas.height = Math.round(size.height * dpr);
@@ -262,10 +276,17 @@ function initPortfolio() {
     }) || pages.find((page) => page.getBoundingClientRect().top >= 0) || pages[0];
   }
   function syncMode(initial = false) {
+    const phone = handheld();
+    const phoneLand = phone && viewChoice === "landscape" && landscapeNow() && !reducedQuery.matches;
+    root.classList.toggle("is-handheld", phone);
+    root.classList.toggle("needs-choice", phone && !viewChoice && !reducedQuery.matches);
+    root.classList.toggle("needs-rotate", phone && viewChoice === "landscape" && !landscapeNow() && !reducedQuery.matches);
+    root.classList.toggle("is-phone-landscape", phoneLand);
     const oldMode = cinematic;
     const selected = currentPage();
     const size = stageSize();
-    cinematic = !mediaUnavailable && !reducedQuery.matches && innerWidth >= 320 && size.width * .448 >= CONFIG.minGlassWidth && size.height * .656 >= CONFIG.minGlassHeight;
+    const fits = size.width * .448 >= CONFIG.minGlassWidth && size.height * .656 >= CONFIG.minGlassHeight;
+    cinematic = !mediaUnavailable && !reducedQuery.matches && fits && (phone ? phoneLand : innerWidth >= 320);
     root.classList.toggle("is-cinematic", cinematic);
     if (cinematic) {
       placeStage(stageSize());

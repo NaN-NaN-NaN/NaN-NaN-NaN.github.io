@@ -154,18 +154,18 @@ html.is-cinematic .chapter.is-active { visibility: visible; }
 html.is-cinematic .sheet { position: absolute; inset: 8% 9% 19%; max-width: none; margin: 0; }
 html.is-cinematic .scene-art { background-position: center; }
 html.is-cinematic .chapter::after { background: linear-gradient(180deg, rgba(7,14,20,.42), rgba(7,14,20,.35) 61%, rgba(7,14,20,.09) 86%), linear-gradient(90deg, rgba(9,19,27,.47), rgba(9,19,27,.35) 69%, rgba(9,19,27,.11)); }
-html.is-cinematic .eyebrow { font-size: 13px; margin-bottom: 12px; letter-spacing: .1em; }
-html.is-cinematic .page-heading h1, html.is-cinematic .page-heading h2 { font-size: clamp(29px, 5cqw, 37px); text-shadow: 0 0 2px #c5e3ee30; }
-html.is-cinematic .role { font-size: 17px; margin-top: 8px; }
-html.is-cinematic .meta { font-size: 14px; margin-top: 6px; }
-html.is-cinematic .page-body { font-size: clamp(17px, 2.6cqw, 19px); line-height: 1.48; margin-top: 16px; }
-html.is-cinematic .page-intro .page-body { margin-top: 26px; }
-html.is-cinematic .page-body .hero-line { font-size: clamp(19px, 3.1cqw, 23px); }
-html.is-cinematic .page-index .page-body { margin-top: 12px; }
-html.is-cinematic .career-index a { padding: 5px 0; font-size: 16px; line-height: 1.5; }
-html.is-cinematic .education h3 { margin-top: 12px; }
+html.is-cinematic .eyebrow { font-size: 2.15cqw; margin-bottom: 1.8cqh; letter-spacing: .1em; }
+html.is-cinematic .page-heading h1, html.is-cinematic .page-heading h2 { font-size: 5.1cqw; text-shadow: 0 0 2px #c5e3ee30; }
+html.is-cinematic .role { font-size: 2.9cqw; margin-top: 1.1cqh; }
+html.is-cinematic .meta { font-size: 2.35cqw; margin-top: .8cqh; }
+html.is-cinematic .page-body { font-size: 2.75cqw; line-height: 1.35; margin-top: 2.2cqh; }
+html.is-cinematic .page-intro .page-body { margin-top: 3.2cqh; }
+html.is-cinematic .page-body .hero-line { font-size: 3.4cqw; }
+html.is-cinematic .page-index .page-body { margin-top: 1.6cqh; }
+html.is-cinematic .career-index a { padding: .6cqh 0; font-size: 2.6cqw; line-height: 1.35; }
+html.is-cinematic .education h3 { margin-top: 1.4cqh; }
 html.is-cinematic .pipeline { margin: 16px 0; }
-html.is-cinematic .screen-controls { position: absolute; z-index: 3; bottom: 5.5%; left: 9%; right: 9%; display: grid; grid-template-columns: auto 1fr 36px 36px; align-items: center; gap: 8px; padding-top: 8px; border-top: 1px solid #c9dce22e; }
+html.is-cinematic .screen-controls { position: absolute; z-index: 3; bottom: 5.5%; left: 9%; right: 9%; display: grid; grid-template-columns: auto 1fr 2.4cqw 2.4cqw; align-items: center; gap: .6cqw; padding-top: .8cqh; border-top: 1px solid #c9dce22e; font-size: 2.2cqw; }
 .screen-controls button { background: transparent; border: 0; min-height: 32px; padding: 4px; font: 15px/1.2 var(--mono); }
 .screen-controls button:hover:not(:disabled) { color: #fff; background: #d2e5f010; }
 #page-index { text-align: left; font-size: 14px; }
@@ -420,7 +420,7 @@ html.is-cinematic .vignette { background: radial-gradient(ellipse at 48% 48%, tr
 html.is-cinematic .contact-list { gap: 8px; margin-bottom: 12px; }
 html.is-cinematic .page-contact .page-body { margin-top: 14px; }
 html.is-cinematic .page-skills .skills-overview { gap: 11px 18px; }
-html.is-cinematic .skills-overview dd { font-size: 15px; line-height: 1.32; }
+html.is-cinematic .skills-overview dd { font-size: 2.45cqw; line-height: 1.28; }
 .project-stack { font-size: 14px; color: var(--muted); line-height: 1.4; }
 .project-links { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
 .skills-overview { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 20px; margin: 0; }
@@ -430,20 +430,29 @@ html.is-cinematic .skills-overview dd { font-size: 15px; line-height: 1.32; }
 .project-brand { display: flex; align-items: flex-start; gap: 12px; }
 .letteron-mark { width: 54px; height: auto; flex: none; margin-top: 2px; filter: invert(1) brightness(1.2); }
 .page-cv .letteron-mark { width: 40px; filter: none; }
-html.is-cinematic .page-skills .page-heading h2 { font-size: 26px; }
-html.is-cinematic .page-skills .eyebrow { margin-bottom: 4px; }
-html.is-cinematic .page-skills .page-body { margin-top: 6px; }
-html.is-cinematic .page-skills .skills-overview { gap: 5px 16px; }
-html.is-cinematic .page-skills .skills-overview dt { font-size: 13px; margin-bottom: 1px; }
-html.is-cinematic .page-skills .skills-overview dd { font-size: 15px; line-height: 1.28; }
-html.is-cinematic .page-skills .certification { margin-top: 6px !important; padding-top: 4px; font-size: 14px; }
-html.is-cinematic .page-education .eyebrow { margin-bottom: 4px; }
-html.is-cinematic .page-education .page-heading h2 { font-size: 24px; }
-html.is-cinematic .page-education .page-body { margin-top: 4px; }
-html.is-cinematic .page-education .education h3 { margin-top: 4px; font-size: 16px; line-height: 1.15; }
+html.is-cinematic .page-skills .page-heading h2,
+html.is-cinematic .page-education .page-heading h2 { font-size: 4.4cqw; }
+html.is-cinematic .page-skills .eyebrow,
+html.is-cinematic .page-education .eyebrow { margin-bottom: 1cqh; }
+html.is-cinematic .page-skills .page-body,
+html.is-cinematic .page-education .page-body { margin-top: 1.2cqh; }
+html.is-cinematic .page-skills .skills-overview { gap: .8cqh 1.6cqw; }
+html.is-cinematic .page-skills .skills-overview dt { font-size: 2.05cqw; margin-bottom: .2cqh; }
+html.is-cinematic .page-skills .skills-overview dd,
+html.is-cinematic .skills-overview dd { font-size: 2.45cqw; line-height: 1.28; }
+html.is-cinematic .page-skills .certification { margin-top: .8cqh !important; padding-top: .5cqh; font-size: 2.2cqw; }
+html.is-cinematic .page-education .education h3 { margin-top: .7cqh; font-size: 2.6cqw; line-height: 1.15; }
 html.is-cinematic .page-education .education h3:first-child { margin-top: 0; }
-html.is-cinematic .page-education .education p { font-size: 14px; line-height: 1.2; }
-html.is-cinematic .page-education .meta { font-size: 13px; margin-top: 0; }
+html.is-cinematic .page-education .education p { font-size: 2.3cqw; line-height: 1.2; }
+html.is-cinematic .page-education .meta { font-size: 2.1cqw; margin-top: 0; }
+html.is-cinematic .page-dense .role { font-size: 2.6cqw; }
+html.is-cinematic .impact-metrics dt { font-size: 4cqw; }
+html.is-cinematic .impact-metrics dd,
+html.is-cinematic .project-stack,
+html.is-cinematic .project-links { font-size: 2.3cqw; }
+html.is-cinematic #page-index,
+html.is-cinematic #page-status,
+html.is-cinematic .screen-controls button { font-size: 2.15cqw; }
 @media (max-width: 800px) {
   html.is-cinematic .scene { position: fixed; inset: 0; width: 100%; height: 100dvh; }
   html.is-cinematic .scene-notes { display: none; }
@@ -452,12 +461,27 @@ html.is-cinematic .page-education .meta { font-size: 13px; margin-top: 0; }
   html.is-cinematic .identity.frost, html.is-cinematic .classic.frost, html.is-cinematic .scroll-hint.frost { padding: 6px 8px; }
   html.is-cinematic .mini, html.is-cinematic .mini-caption, html.is-cinematic .dock-foot { display: none; }
   html.is-cinematic .dock { height: auto; padding: 8px 6px 10px; }
-  html.is-cinematic .page-heading h1, html.is-cinematic .page-heading h2 { font-size: clamp(18px, 7cqw, 26px); }
-  html.is-cinematic .page-body { font-size: 16px; line-height: 1.35; }
-  html.is-cinematic .role { font-size: 14px; }
   html.is-cinematic .sheet.can-scroll { pointer-events: auto; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
 }
-html.is-cinematic .page-dense .role { font-size: 16px; }
+.view-switch, .mode-gate, .rotate-gate { display: none; }
+.view-switch button, .mode-card button, .rotate-gate button { font: 13px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #f4f0e8; background: #12161aee; border: 1px solid #ffffff22; border-radius: 999px; padding: 10px 14px; }
+.mode-gate, .rotate-gate { position: fixed; inset: 0; z-index: 40; place-items: center; padding: 24px; background: #07090af2; text-align: center; }
+.mode-card, .rotate-gate { color: #f4f0e8; }
+.mode-card { display: grid; gap: 12px; max-width: 320px; }
+.mode-card p, .rotate-gate p { margin: 0 0 8px; font: 18px/1.4 var(--sans); }
+html.is-handheld.needs-choice .mode-gate { display: grid; }
+html.is-handheld.needs-rotate .rotate-gate { display: grid; }
+html.is-handheld:not(.is-cinematic):not(.needs-choice) .view-switch { display: flex; gap: 8px; justify-content: center; padding: 12px; }
+html.is-handheld:not(.is-cinematic) .view-switch [data-view="text"] { display: none; }
+html.is-phone-landscape .dock { inset: 0 0 0 auto; width: 96px; height: 100%; padding: 16px 10px; display: flex; align-items: stretch; }
+html.is-phone-landscape .dock-items { display: flex; flex-direction: column; justify-content: center; gap: 14px; max-width: none; height: 100%; }
+html.is-phone-landscape .dock-btn { text-align: right; }
+html.is-phone-landscape .mini, html.is-phone-landscape .mini-caption, html.is-phone-landscape .dock-foot, html.is-phone-landscape .classic, html.is-phone-landscape .scene-notes, html.is-phone-landscape .identity { display: none !important; }
+html.is-phone-landscape .hud { justify-content: flex-start; padding: 16px 112px 0 16px; }
+html.is-phone-landscape .scroll-hint { order: 0; width: auto; }
+html.is-phone-landscape .view-switch { display: flex; pointer-events: auto; }
+html.is-phone-landscape .view-switch [data-view="landscape"] { display: none; }
+html.is-cinematic .page-dense .role { font-size: 2.6cqw; }
 html.is-cinematic .page-dense .page-body { margin-top: 12px; }
 html.is-cinematic .page-dense .achievements li { margin-bottom: 9px; }
 @media (max-width: 480px) { .skills-overview { grid-template-columns: 1fr; gap: 16px; } }
